@@ -29,6 +29,7 @@ Usage example:
 """
 
 from __future__ import annotations
+from typing import List, Dict, Tuple
 import json, os, string
 from pathlib import Path
 
