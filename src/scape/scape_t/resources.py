@@ -11,7 +11,7 @@ directory, or current working directory) and after installation (using packaged
 data if included).
 
 Exposed constants:
-- ABBREVIATIONS : list of (pattern, replacement) regex pairs, loaded from abbreviations.json
+- ABBREVIATIONS : list of (pattern, replacement) regex pairs, loaded from Abbreviations.json
 - DELIMITERS    : set of sentence boundary characters
 - STOPWORDS     : set of semantically uninformative function words to ignore in analysis
 - PUNCT         : translation table for stripping punctuation (excluding apostrophes)
@@ -89,7 +89,7 @@ def _load_json(filename: str):
         + ", ".join(str(d) for d in _candidate_data_dirs()))
 
 
-ABBREVIATIONS = [(pat, repl) for pat, repl in _load_json("abbreviations.json")]
+ABBREVIATIONS = [(pat, repl) for pat, repl in _load_json("Abbreviations.json")]
 DELIMITERS = {".", "!", "?"}
 STOPWORDS = {"a", "an", "the", "that", "and", "very", "will", "just"}
 PUNCT = str.maketrans("", "", string.punctuation.replace("'", ""))
