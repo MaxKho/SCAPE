@@ -6,8 +6,9 @@ Centralised text normalisation resources and default hyperparameters for SCAPE-T
 
 This module loads external JSON data files (e.g. abbreviation expansions) and 
 exposes them alongside common preprocessing constants. It is designed to work 
-both during development (loading from a top-level `data/` directory or current 
-working directory) and after installation (using packaged data if included).
+both during development (loading from `src/data/` or a top-level `data/` 
+directory, or current working directory) and after installation (using packaged 
+data if included).
 
 Exposed constants:
 - ABBREVIATIONS : list of (pattern, replacement) regex pairs, loaded from abbreviations.json
@@ -19,8 +20,9 @@ Exposed constants:
 Search order for JSON data:
 1. SCAPE_DATA_DIR environment variable (explicit override)
 2. Packaged data inside scape.scape_t/data (if installed with package data)
-3. Project-root/data (when working in src/ layout)
-4. Current working directory and cwd/data (for Colab or ad-hoc runs)
+3. Project-root/src/data (when working in src/ layout)
+4. Project-root/data (legacy layout without src/)
+5. Current working directory and cwd/data (for Colab or ad-hoc runs)
 
 Usage example:
     from scape.scape_t.resources import ABBREVIATIONS, DEFAULT_PARAMS
@@ -45,17 +47,19 @@ def _candidate_data_dirs() -> list[Path]:
     """
     Search order:
     - packaged data: scape.scape_t/data (when installed)
-    - project root's data/ (development)
+    - project-root/src/data (development in src/ layout)
+    - project-root/data (legacy layout)
     - current working directory (Colab / ad-hoc)
     """
     cands = []
     if _HAS_PKG_DATA:
         cands.append(_PKG_DATA)
 
-    # project-root/data
+    # project-root/src/data and project-root/data
     try:
         here = Path(__file__).resolve()
         root = here.parents[3] if len(here.parents) >= 4 else here.parents[-1]
+        cands.append(root / "src" / "data")
         cands.append(root / "data")
     except Exception:
         pass
@@ -63,13 +67,16 @@ def _candidate_data_dirs() -> list[Path]:
     # cwd
     cands.append(Path(os.getcwd()))
     cands.append(Path(os.getcwd()) / "data")
+
     # de-dup while preserving order
     out, seen = [], set()
     for p in cands:
-        if p is None: continue
+        if p is None:
+            continue
         q = p.resolve()
         if q not in seen:
-            out.append(q); seen.add(q)
+            out.append(q)
+            seen.add(q)
     return out
 
 def _load_json(filename: str):
