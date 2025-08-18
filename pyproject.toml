@@ -10,6 +10,9 @@ readme = "README.md"
 requires-python = ">=3.9"
 dependencies = [
   "transformers>=4.41,<5",
+  "datasets<4.0.0", 
+  "huggingface_hub<1.14.0",
+  "requests",
   "torch",
   "textstat",
   "wordfreq",
@@ -22,6 +25,3 @@ dependencies = [
 
 [tool.setuptools.packages.find]
 where = ["src"]
-
-[tool.setuptools.package-data]
-"scape.scape_t" = ["data/*.json"]
