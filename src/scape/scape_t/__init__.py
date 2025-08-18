@@ -2,7 +2,7 @@
 SCAPE-T: Semantic Complexity from Attention Patterns in Encoders - encoder-only Transformer variant
 """
 
-from .core import scapet
+from .core import scape_t
 from .datasets import (
     get_all_datasets, get_dev_splits, get_test_splits,
     get_gau_split, get_abstractness_dict
