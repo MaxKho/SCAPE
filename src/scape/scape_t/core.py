@@ -6,31 +6,79 @@ Core implementation of SCAPE-T (Semantic Complexity from Attention Patterns in
 Encoders - encoder-only Transformer variant).
 
 This module provides the primary entry point for computing SCAPE-T scores. It 
-defines the metric function itself (`scapet`), handles model and tokenizer 
+defines the metric function itself (`scape_t`), handles model and tokeniser 
 initialisation, and exposes default hyperparameters. 
 
 Key features:
-- Lazy loading of the BERT model and tokenizer via `_get_model_and_tokenizer`, 
-  ensuring imports remain lightweight and model weights are only loaded on first use.
-- `scapet` function: computes semantic complexity scores for a given corpus or single text, with
+- A global `device` (picked once on import).
+- Lazily-initialised singletons for the BERT `model` and `tokeniser`, exposed via
+  `get_model()`, `get_tokeniser()`, and `get_model_tokeniser()`.
+- `scape_t` function: computes semantic complexity scores for a given corpus or single text, with
   options for layer ablation or single-layer evaluation.
-- Access to `default_params`, which provides the recommended default hyperparameter
-  configuration (loaded from `resources.py`).
 - Internal reliance on shared resources (abbreviations, delimiters, stopwords, 
-  punctuation tables) defined in `resources.py`.
+  punctuation tables, default parameters) defined in `resources.py`.
 
 Typical usage:
-    from scape.scape_t.core import scapet, default_params
-    scores, _, _ = scapet("Hello world")
+    from scape.scape_t.core import get_model, get_tokeniser, device, scape_t
+    model = get_model()
+    tok   = get_tokeniser()
+    score = scape_t("Hello world")
 """
 
-
 # ---- imports ----
-import torch, json, os, re, string, math, gc
-from functools import lru_cache
+from __future__ import annotations
+import torch, re, threading
+from typing import Optional, Tuple
 from transformers import BertTokenizer
 from transformers.models.bert.modeling_bert import BertModel
 from .resources import ABBREVIATIONS, DELIMITERS, STOPWORDS, PUNCT, DEFAULT_PARAMS
+
+# ---- global device ----
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+
+# ---- lazy singletons (model & tokeniser) ----
+__MODEL: Optional[BertModel] = None
+__TOKENISER: Optional[BertTokenizer] = None
+__INIT_LOCK = threading.Lock()
+
+def _init_model_tokeniser_if_needed() -> None:
+    """Initialise global BERT model & tokeniser once."""
+    global __MODEL, __TOKENISER
+    if __MODEL is not None and __TOKENISER is not None:
+        return
+    with __INIT_LOCK:
+        if __MODEL is None or __TOKENISER is None:
+            tok = BertTokenizer.from_pretrained("bert-base-uncased")
+            mdl = BertModel.from_pretrained(
+                "bert-base-uncased",
+                output_attentions=True
+            ).to(device).eval()
+            __TOKENISER = tok
+            __MODEL = mdl
+
+def get_model() -> BertModel:
+    """Return the shared BERT model (lazy-loaded)."""
+    _init_model_tokeniser_if_needed()
+    # mypy: __MODEL will be set now
+    return __MODEL  # type: ignore[return-value]
+
+def get_tokeniser() -> BertTokenizer:
+    """Return the shared BERT tokeniser (lazy-loaded)."""
+    _init_model_tokeniser_if_needed()
+    return __TOKENISER  # type: ignore[return-value]
+
+def get_model_tokeniser() -> Tuple[BertModel, BertTokenizer]:
+    """Return the shared (model, tokeniser) pair (lazy-loaded)."""
+    _init_model_tokeniser_if_needed()
+    return __MODEL, __TOKENISER  # type: ignore[return-value]
+
+def reset_model_tokeniser() -> None:
+    """Dispose and reset the cached model/tokeniser (e.g., to switch device)."""
+    global __MODEL, __TOKENISER
+    with __INIT_LOCK:
+        __MODEL = None
+        __TOKENISER = None
+        torch.cuda.empty_cache() if torch.cuda.is_available() else None
 
 # ---- text preprocessing ----
 def filter_text(text):
@@ -250,21 +298,14 @@ def aggregate(attentions, p, layer_abl=None, only_layer=None):
         scores.append(combine(layer, prev, p))
         prev.append(mask_attention(layer))
     L = len(attentions)
-    x = torch.arange(L, dtype=torch.float32, device=device)
     w = layer_weights(L, p['mu'], p['sigma'], p['eta'], layer_abl, only_layer).to(device)
     return (w * torch.stack(scores)).sum()
-
-@lru_cache(maxsize=1)
-def _get_model_and_tokenizer():
-    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-    tok = BertTokenizer.from_pretrained("bert-base-uncased")
-    mdl = BertModel.from_pretrained("bert-base-uncased", output_attentions=True).to(device).eval()
-    return mdl, tok, device
 
 @torch.no_grad()
 def scape_t(text_data, p=DEFAULT_PARAMS, layer_abl=None, only_layer=None):
     """Compute semantic complexity of a given text or corpus."""
-    model, tokenizer, device = _get_model_and_tokenizer()
+    model = get_model()
+    tokeniser = get_tokeniser()
     scores = {}
     corpus = text_data if isinstance(text_data, (dict, list, tuple, set)) else [text_data]
     for text in corpus:
@@ -272,11 +313,10 @@ def scape_t(text_data, p=DEFAULT_PARAMS, layer_abl=None, only_layer=None):
         sentences = [' '.join([w for w in c.translate(PUNCT).split() if w.lower() not in STOPWORDS]) for c in sentences if c]
         sentence_scores = []
         for sentence in sentences:
-            enc     = tokenizer([sentence], return_tensors="pt", padding=True, truncation=True, max_length=512).to(device)
+            enc     = tokeniser([sentence], return_tensors="pt", padding=True, truncation=True, max_length=512).to(device)
             outputs = model(**enc)
             atts    = outputs.attentions
             num_L   = len(atts)
-            _, _, n, _ = atts[0].shape
 
             w = layer_weights(num_L, p['mu'], p['sigma'], p['eta'], layer_abl, only_layer).to(device)
             self_focus = (torch.stack([compute_self_focus(l[0]) for l in atts]).mean(1) * w).sum()
