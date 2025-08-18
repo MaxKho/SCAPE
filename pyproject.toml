@@ -9,7 +9,7 @@ description = "Semantic Complexity & Analysis Package (SCAPE)"
 readme = "README.md"
 requires-python = ">=3.9"
 dependencies = [
-  "transformers==4.31.0",
+  "transformers>=4.41,<5",
   "torch",
   "textstat",
   "wordfreq",
