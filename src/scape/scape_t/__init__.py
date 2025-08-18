@@ -7,5 +7,5 @@ from .resources import ABBREVIATIONS, DELIMITERS, STOPWORDS, PUNCT, DEFAULT_PARA
 
 __all__ = [
     "scape_t", "get_model", "get_tokeniser", "device",
-    "ABBREVIATIONS", "DELIMITERS", "STOPWORDS", "PUNCT", "DEFAULT_PARAMS"
+    "ABBREVIATIONS", "DELIMITERS", "STOPWORDS", "PUNCT", "DEFAULT_PARAMS", "ABSTRACTNESS"
 ]
