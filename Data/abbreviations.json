@@ -1,0 +1,118 @@
+[
+  [
+    "&c\\s*\\.",
+    "and so forth "
+  ],
+  [
+    "&c\\s*\\.\\s*([A-Z])",
+    "and so forth . \\1"
+  ],
+  [
+    "([.,;:?!])[.,;:?!]+",
+    "\\1"
+  ],
+  [
+    "Dr\\.",
+    "Doctor "
+  ],
+  [
+    "Jr\\.",
+    "Junior "
+  ],
+  [
+    "Mr\\.",
+    "Mr "
+  ],
+  [
+    "Mrs\\.",
+    "Mrs "
+  ],
+  [
+    "Ms\\.",
+    "Ms "
+  ],
+  [
+    "Prof\\.",
+    "Professor "
+  ],
+  [
+    "Sr\\.",
+    "Senior "
+  ],
+  [
+    "St\\.",
+    "Saint "
+  ],
+  [
+    "\\b([ivxIVX]+)\\.",
+    "\\1 "
+  ],
+  [
+    "\\bP\\.",
+    "Page "
+  ],
+  [
+    "\\bVol\\.",
+    "volume "
+  ],
+  [
+    "\\bcf\\.",
+    "cf "
+  ],
+  [
+    "\\bch\\.",
+    "chapter "
+  ],
+  [
+    "\\bchap\\.",
+    "chapter "
+  ],
+  [
+    "\\be\\.\\s*g\\.",
+    "for example "
+  ],
+  [
+    "\\bed\\.",
+    "edition "
+  ],
+  [
+    "\\bedd\\.",
+    "editions "
+  ],
+  [
+    "\\bi\\.\\s*e\\.",
+    "that is, "
+  ],
+  [
+    "\\bl\\.",
+    "line "
+  ],
+  [
+    "\\bp\\.",
+    "page "
+  ],
+  [
+    "\\bpp\\.",
+    "pages "
+  ],
+  [
+    "\\bpref\\.",
+    "preface "
+  ],
+  [
+    "\\bviz\\.",
+    "namely "
+  ],
+  [
+    "\\bvol\\.",
+    "volume "
+  ],
+  [
+    "etc\\s*\\.",
+    "and so forth"
+  ],
+  [
+    "etc\\s*\\.\\s*([A-Z])",
+    "and so forth . \\1"
+  ]
+]
