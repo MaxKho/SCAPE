@@ -1,3 +1,33 @@
+"""
+resources.py
+------------
+
+Centralised text normalisation resources and default hyperparameters for SCAPE-T.
+
+This module loads external JSON data files (e.g. abbreviation expansions) and 
+exposes them alongside common preprocessing constants. It is designed to work 
+both during development (loading from a top-level `data/` directory or current 
+working directory) and after installation (using packaged data if included).
+
+Exposed constants:
+- ABBREVIATIONS : list of (pattern, replacement) regex pairs, loaded from abbreviations.json
+- DELIMITERS    : set of sentence boundary characters
+- STOPWORDS     : set of semantically uninformative function words to ignore in analysis
+- PUNCT         : translation table for stripping punctuation (excluding apostrophes)
+- DEFAULT_PARAMS: dict of default SCAPE-T hyperparameters
+
+Search order for JSON data:
+1. SCAPE_DATA_DIR environment variable (explicit override)
+2. Packaged data inside scape.scape_t/data (if installed with package data)
+3. Project-root/data (when working in src/ layout)
+4. Current working directory and cwd/data (for Colab or ad-hoc runs)
+
+Usage example:
+    from scape.scape_t.resources import ABBREVIATIONS, DEFAULT_PARAMS
+    print(ABBREVIATIONS[:3])
+    print(DEFAULT_PARAMS["alpha"])
+"""
+
 from __future__ import annotations
 import json, os, string
 from pathlib import Path
