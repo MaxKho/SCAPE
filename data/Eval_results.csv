@@ -1,10 +1,10 @@
 Metric,WLC_Test,Test,Abstractness_Test
-SCAPE-T,0.785000,0.851000,0.823000
-Lexicon complexity,0.658000,0.943000,0.744000
-Flesch–Kincaid hardness,0.595000,0.931000,0.789000
-Type–token ratio,0.564000,0.617000,0.500000
-"MDL (bits/byte, gpt2)",0.520000,0.341000,0.267000
-Zipf-freq hardness,0.479000,0.854000,0.546000
-GPT-2 perplexity,0.454000,0.584000,0.323000
-Token length,0.392000,0.496000,0.517000
-Mean dep-tree depth,0.369000,0.455000,0.506000
+SCAPE-T,78.50,85.10,82.30
+Lexicon complexity,65.80,94.30,74.40
+Flesch–Kincaid hardness,59.50,93.10,78.90
+Type–token ratio,56.4,61.70,50.00
+"MDL (bits/byte, gpt2)",52.00,34.10,26.70
+Zipf-freq hardness,47.90,85.40,54.60
+GPT-2 perplexity,45.40,58.40,32.30
+Token length,39.20,49.60,51.70
+Mean dep-tree depth,36.90,45.50,50.60
