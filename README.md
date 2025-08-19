@@ -23,7 +23,7 @@ Python ≥ **3.9** recommended.
 
 ```bash
 !pip install -U pip setuptools wheel
-!pip install git+https://github.com/MaxKho/SCAPE-T.git
+!pip install git+https://github.com/MaxKho/SCAPE.git
 !python -m spacy download en_core_web_sm
 ```
 
@@ -31,7 +31,7 @@ Python ≥ **3.9** recommended.
 
 ```bash
 pip install -U pip setuptools wheel
-pip install git+https://github.com/MaxKho/SCAPE-T.git
+pip install git+https://github.com/MaxKho/SCAPE.git
 python -m spacy download en_core_web_sm
 ```
 
