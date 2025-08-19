@@ -1,6 +1,6 @@
 Ablation,Pairwise Acc. (%),Δ from base (pp)
 Baseline,88.80,0.00
 No head redundancy (α=0),88.76,-0.04
-No self-focus penalty (δ=0),84.2,-4.60
+No self-focus penalty (δ=0),84.20,-4.60
 Uniform layer weights (η=0),58.62,-30.18
 No CLS focus (β=0),57.42,-31.38
