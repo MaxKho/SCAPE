@@ -175,7 +175,7 @@ def _acc_4_vs_12_from_list(scores: List[float], cats: List[int]) -> float:
     wins  = (diff > 0).sum()
     ties  = (diff == 0).sum()
     total = diff.size
-    return (wins + 0.5 * ties) / total
+    return 100 * (wins + 0.5 * ties) / total
 
 # ---- main API ----
 def build_results_table(datasets: Dict[str, List[str]] | None = None,
@@ -207,7 +207,7 @@ def build_results_table(datasets: Dict[str, List[str]] | None = None,
     def fill_pairwise(simp: List[str], comp: List[str], scorer_fn) -> float:
         s_scores, c_scores = scorer_fn(simp), scorer_fn(comp)
         sd = dict(zip(simp, s_scores)); sd.update(zip(comp, c_scores))
-        return pairwise_accuracy(sd, simp, comp)
+        return 100 * pairwise_accuracy(sd, simp, comp)
 
     # One-pass specs
     specs = [
@@ -253,7 +253,7 @@ def build_results_table(datasets: Dict[str, List[str]] | None = None,
     table = (pd.DataFrame(rows)
                .set_index("Metric")
                .sort_values(by="WLC_Test", ascending=False, na_position="last"))
-    return table.round(3)
+    return table.round(2)
 
 # ---- ranking utility ----
 def ranking(corpus: Dict[str, int] | None = None,
