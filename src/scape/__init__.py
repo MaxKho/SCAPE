@@ -2,12 +2,13 @@
 scape: Semantic Complexity & Analysis Package
 
 Subpackages / modules exposed lazily:
-- scape.scape_t     → available as attribute: scape.scape_t
-- scape.datasets    → available as attribute: scape.datasets
+- scape.scape_t     → attribute: scape.scape_t
+- scape.datasets    → attribute: scape.datasets
+
 Utilities re-exported lazily:
 - bert_token_length → scape.bert_token_length  (from scape.dataset_builder)
 - build_results_table, ranking → scape.build_results_table / scape.ranking
-                                (re-exported from scape.scape_t)
+                                 (re-exported from scape.scape_t)
 """
 
 from importlib import import_module
@@ -30,9 +31,10 @@ def __getattr__(name: str) -> Any:
 
     # utilities
     if name == "bert_token_length":
+        # defined at module top-level in scape/dataset_builder.py
         return getattr(import_module("scape.dataset_builder"), "bert_token_length")
     if name in {"build_results_table", "ranking"}:
-        # re-export from scape.scape_t (which re-exports them from its eval.py)
+        # re-export from scape.scape_t (which re-exports from scape/scape_t/eval.py)
         return getattr(import_module("scape.scape_t"), name)
 
     raise AttributeError(name)
