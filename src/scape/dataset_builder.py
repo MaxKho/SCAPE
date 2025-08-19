@@ -41,7 +41,7 @@ from collections import defaultdict
 from typing import List, Tuple, Dict
 from bs4 import BeautifulSoup
 from datasets import load_dataset
-from scape.scape_t.core import get_tokeniser, device, group_text, split_text, scape_t
+from scape.scape_t.core import get_tokeniser, group_text, split_text
 from scape.datasets import Abstractness_Test
 
 # ---- initialisation ---
