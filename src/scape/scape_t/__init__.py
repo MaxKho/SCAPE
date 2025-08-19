@@ -5,6 +5,7 @@ SCAPE-T: Semantic Complexity from Attention Patterns in Encoders
 
 from .core import get_model, get_tokeniser, device, scape_t
 from .resources import ABBREVIATIONS, DELIMITERS, STOPWORDS, PUNCT, DEFAULT_PARAMS
+from .eval import build_results_table, ranking
 
 __all__ = [
     "get_model",
@@ -16,4 +17,6 @@ __all__ = [
     "STOPWORDS",
     "PUNCT",
     "DEFAULT_PARAMS",
+    "build_results_table",
+    "ranking"
 ]
