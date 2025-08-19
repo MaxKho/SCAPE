@@ -1,43 +1,31 @@
 """
 scape: Semantic Complexity & Analysis Package
 
-Subpackages / modules exposed lazily:
-- scape.scape_t     → attribute: scape.scape_t
-- scape.datasets    → attribute: scape.datasets
+Subpackages:
+- scape.scape_t   : SCAPE-T (encoder-only Transformer variant)
+- scape.datasets  : Bundled datasets (importable variables)
 
-Utilities re-exported lazily:
-- bert_token_length → scape.bert_token_length  (from scape.dataset_builder)
-- build_results_table, ranking → scape.build_results_table / scape.ranking
-                                 (re-exported from scape.scape_t)
+Convenience re-exports:
+- dataset builders and helpers from scape.dataset_builder
 """
 
-from importlib import import_module
-from typing import Any
+from . import scape_t, datasets
+
+# Re-export dataset builder helpers at top level
+from .dataset_builder import (
+    get_dev_splits,
+    get_test_splits,
+    get_gau_split,
+    get_all_datasets,
+    bert_token_length,
+)
 
 __all__ = [
     "scape_t",
     "datasets",
+    "get_dev_splits",
+    "get_test_splits",
+    "get_gau_split",
+    "get_all_datasets",
     "bert_token_length",
-    "build_results_table",
-    "ranking",
 ]
-
-def __getattr__(name: str) -> Any:
-    # submodules
-    if name == "scape_t":
-        return import_module("scape.scape_t")
-    if name == "datasets":
-        return import_module("scape.datasets")
-
-    # utilities
-    if name == "bert_token_length":
-        # defined at module top-level in scape/dataset_builder.py
-        return getattr(import_module("scape.dataset_builder"), "bert_token_length")
-    if name in {"build_results_table", "ranking"}:
-        # re-export from scape.scape_t (which re-exports from scape/scape_t/eval.py)
-        return getattr(import_module("scape.scape_t"), name)
-
-    raise AttributeError(name)
-
-def __dir__():
-    return sorted(list(globals().keys()) + __all__)
