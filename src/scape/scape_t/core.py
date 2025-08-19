@@ -18,7 +18,7 @@ Key features:
 - Internal reliance on shared resources (abbreviations, delimiters, stopwords, 
   punctuation tables, default parameters) defined in `resources.py`.
 
-Typical usage:
+Usage example:
     from scape.scape_t.core import get_model, get_tokeniser, device, scape_t
     model = get_model()
     tok   = get_tokeniser()
