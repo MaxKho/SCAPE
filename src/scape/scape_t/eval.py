@@ -36,7 +36,7 @@ Usage examples:
 
     #2
     rank_df = ranking()                                 # defaults to Abstractness_Test
-     rank_df.head(10)
+    rank_df.head(10)
 """
 
 # ---- imports ----
