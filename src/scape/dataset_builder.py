@@ -42,7 +42,7 @@ from typing import List, Tuple, Dict
 from bs4 import BeautifulSoup
 from datasets import load_dataset
 from scape.scape_t.core import get_tokeniser, device, group_text, split_text, scape_t
-from scape.scape_t.resources import ABSTRACTNESS
+from scape.datasets import Abstractness_Test
 
 # ---- initialisation ---
 SEED = 1
@@ -410,4 +410,4 @@ def get_all_datasets(n_dev: int = 200, n_len_ctrl: int = 100):
     return {"Dev_simple": Dev_simple, "Dev_complex": Dev_complex,
         "Test_simple": Test_simple, "Test_complex": Test_complex,
         "WLC_Test_simple": WLC_Test_simple, "WLC_Test_complex": WLC_Test_complex,
-        "GAU_simple": GAU_simple, "Abstractness_Test": ABSTRACTNESS}
+        "GAU_simple": GAU_simple, "Abstractness_Test": Abstractness_Test}
