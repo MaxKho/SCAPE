@@ -49,7 +49,7 @@ from functools import lru_cache
 from transformers import GPT2Tokenizer, GPT2LMHeadModel
 from scape.scape_t.core import scape_t
 from scape.scape_t.resources import DEFAULT_PARAMS
-from scape import datasets, bert_token_length
+from scape.dataset_builder import bert_token_length
 
 # ---- cached resources (perf) ----
 @lru_cache(maxsize=2)
@@ -82,7 +82,8 @@ def pairwise_accuracy(score_dict, simple_sents, complex_sents):
     return float("nan") if total == 0 else correct / total
 
 def _get_default_datasets():
-    """Return packaged datasets (no building)."""
+    """Return packaged datasets. Imported lazily to avoid import loops."""
+    from scape import datasets as _datasets
     return {
         "Dev_simple":         datasets.Dev_simple,
         "Dev_complex":        datasets.Dev_complex,
