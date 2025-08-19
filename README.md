@@ -59,7 +59,6 @@ for t, s in sorted(scores.items(), key=lambda kv: kv[1], reverse=True):
 
 *Script:* `scripts/demo.py`
 
----
 
 ### 2) Build the evaluation table (pairwise accuracy) and term ranking (abstractness set)
 
@@ -71,7 +70,6 @@ display(ranking())
 
 *Script:* `scripts/eval.py`
 
----
 
 ### 3) Perform ablations (submetrics + per-layer)
 
@@ -85,7 +83,7 @@ layer_df, _ = layer_ablation_dev(); print("\nLayer ablations (Dev):"); display(l
 
 *Script:* `scripts/ablations.py`
 
----
+
 
 ### 4) Tune the parameters (evolutionary search)
 
