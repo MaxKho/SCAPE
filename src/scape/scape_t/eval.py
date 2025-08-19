@@ -83,7 +83,7 @@ def pairwise_accuracy(score_dict, simple_sents, complex_sents):
 
 def _get_default_datasets():
     """Return packaged datasets. Imported lazily to avoid import loops."""
-    from scape import datasets as _datasets
+    from scape import datasets
     return {
         "Dev_simple":         datasets.Dev_simple,
         "Dev_complex":        datasets.Dev_complex,
