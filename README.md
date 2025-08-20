@@ -181,14 +181,6 @@ data = get_all_datasets()
 
 ---
 
-## Data & licensing notes
-
-* Bundled datasets are provided for evaluation convenience.
-* If you rebuild datasets yourself (e.g., via scraping Gutenberg/Wikipedia), follow the respective sites’ terms of use.
-* For demos/examples, prefer public-domain or your own text.
-
----
-
 ## Repo layout (source)
 
 ```
@@ -209,6 +201,153 @@ src/
       ablations.py             # submetric & per-layer ablations
       tuning.py                # evolutionary_search, mutate
 ```
+
+---
+
+## Data & Licensing (UK)
+
+**Jurisdiction.** This repository is maintained from the **United Kingdom**, where literary works are protected for **life + 70 years** (UK law). Public-domain (PD) status for non-CC texts in this repo is assessed under **UK law**.
+
+**Access dates.** All source texts referenced below were accessed on **20/08/2025**.
+
+---
+
+## What this dataset contains
+
+* **Wikipedia sentences** (bulk reuse; hundreds–thousands) used as the *complex* side in evaluations.
+* **Public-domain children’s stories** (Project Gutenberg, UK-PD) used as the *simple* side.
+* **Classic philosophy extracts** (Project Gutenberg, UK-PD) used as *complex* development material.
+* **Two synthetic subsets (ChatGPT)** used for compliance in place of content I may not redistribute:
+
+  * `scape/datasets/dev_simple.txt` — **200 AI-generated sentences** in the style of MCTest (no MCTest text included).
+  * `scape/datasets/gau_simple.txt` — **200 AI-generated French sentences** in the style of a children’s story (no *Le Petit Prince* text included).
+
+---
+
+## Licences & redistribution
+
+### Wikipedia
+
+Portions of this dataset **reproduce Wikipedia text** and are therefore licensed under **CC BY-SA 4.0**. Reuse requires:
+
+* **Attribution** (see TASL below),
+* A **link to the licence**,
+* **Indication of changes** (see Indication of Changes (pre-processing) below), and
+* **Share-alike** (derivatives must also be under **CC BY-SA 4.0**).
+
+**Licence link (human-readable):** [https://creativecommons.org/licenses/by-sa/4.0/](https://creativecommons.org/licenses/by-sa/4.0/)
+**Legal code:** [https://creativecommons.org/licenses/by-sa/4.0/legalcode](https://creativecommons.org/licenses/by-sa/4.0/legalcode)
+
+> **Share-alike reminder:** Any files in this repo that contain Wikipedia text are re-licensed under **CC BY-SA 4.0**. If you remix those files, your derivatives must also be **CC BY-SA 4.0** and retain attribution and change notes.
+
+### Project Gutenberg (US)
+
+Texts included here are **public domain in the UK**. Keep **source URLs** and do not imply endorsement by Project Gutenberg (registered trademark). If you redistribute their **editions** verbatim, retain their notices.
+
+### Project Gutenberg Australia (PG-AU)
+
+*Le Petit Prince* is **public domain in the UK/EU** but **not** in the **United States** until 2039. Because GitHub is US-based, this repository **does not redistribute** the PG-AU text. Instead, I provide a **synthetic** French subset (see below) and code that can fetch PG-AU content locally for research use where lawful.
+
+### Synthetic subsets (ChatGPT)
+
+* Generated with ChatGPT (OpenAI). Under OpenAI’s Terms, **you own the outputs** to the extent permitted by law.
+* To avoid licence conflicts and keep reuse simple, both synthetic subsets are released under **CC0 1.0** (public-domain dedication).
+
+  * **CC0 1.0:** [https://creativecommons.org/publicdomain/zero/1.0/](https://creativecommons.org/publicdomain/zero/1.0/)
+
+Folders/files **not** containing Wikipedia text (e.g., the synthetic subsets) are **not** subject to CC BY-SA; they carry the licence stated here (CC0 1.0).
+
+
+### Indication of changes (pre-processing)
+
+For all source texts, I applied **non-substantive normalisation**:
+
+* Sentence segmentation and filtering of very short sentences (≥10 words).
+* Removal of bracketed references and boilerplate (e.g., `[\d+]`, editorial notes, headers/footers).
+* Removal of inline numeric artefacts and digits stuck to words.
+* Whitespace/punctuation normalisation.
+
+No paraphrasing or semantic rewrites of source sentences were performed.
+
+
+### TASL attribution for Wikipedia content
+
+The dataset includes material from the following articles (accessed **20/08/2025**). Each entry provides **T**itle, **A**uthor, **S**ource, **L**icence, plus **Changes** as required by CC BY-SA.
+
+1. **Title:** Artificial intelligence
+   **Author:** Wikipedia contributors
+   **Source:** [https://en.wikipedia.org/wiki/Artificial\_intelligence](https://en.wikipedia.org/wiki/Artificial_intelligence)
+   **Licence:** CC BY-SA 4.0 — [https://creativecommons.org/licenses/by-sa/4.0/](https://creativecommons.org/licenses/by-sa/4.0/)
+   **Changes:** sentence segmentation; removal of references/boilerplate; light normalisation.
+
+2. **Title:** Quantum field theory
+   **Author:** Wikipedia contributors
+   **Source:** [https://en.wikipedia.org/wiki/Quantum\_field\_theory](https://en.wikipedia.org/wiki/Quantum_field_theory)
+   **Licence:** CC BY-SA 4.0 — [https://creativecommons.org/licenses/by-sa/4.0/](https://creativecommons.org/licenses/by-sa/4.0/)
+   **Changes:** sentence segmentation; removal of references/boilerplate; light normalisation.
+
+3. **Title:** Philosophy of mind
+   **Author:** Wikipedia contributors
+   **Source:** [https://en.wikipedia.org/wiki/Philosophy\_of\_mind](https://en.wikipedia.org/wiki/Philosophy_of_mind)
+   **Licence:** CC BY-SA 4.0 — [https://creativecommons.org/licenses/by-sa/4.0/](https://creativecommons.org/licenses/by-sa/4.0/)
+   **Changes:** sentence segmentation; removal of references/boilerplate; light normalisation.
+
+> If you add more Wikipedia pages, append TASL entries here with title, URL, access date, licence link, and change notes.
+
+### Public-domain sources (UK)
+
+**Children’s stories (Project Gutenberg):**
+
+* *The Three Little Pigs* — [https://www.gutenberg.org/cache/epub/18155/pg18155.txt](https://www.gutenberg.org/cache/epub/18155/pg18155.txt) — **Public Domain (UK)** — accessed 20/08/2025.
+* *The Little Gingerbread Man* — [https://www.gutenberg.org/files/25877/25877.txt](https://www.gutenberg.org/files/25877/25877.txt) — **Public Domain (UK)** — accessed 20/08/2025.
+* *The Children’s Hour (collection)* — [https://www.gutenberg.org/files/11592/11592-h/11592-h.htm](https://www.gutenberg.org/files/11592/11592-h/11592-h.htm) — **Public Domain (UK)** — accessed 20/08/2025.
+
+**Classic philosophy (Project Gutenberg):**
+
+* G.W\.F. Hegel — Project Gutenberg eBook #55108 — [https://www.gutenberg.org/ebooks/55108.txt.utf-8](https://www.gutenberg.org/ebooks/55108.txt.utf-8) — **Public Domain (UK)** — accessed 20/08/2025.
+* Immanuel Kant — Project Gutenberg eBook #4280 — [https://www.gutenberg.org/ebooks/4280.txt.utf-8](https://www.gutenberg.org/ebooks/4280.txt.utf-8) — **Public Domain (UK)** — accessed 20/08/2025.
+
+**Classic literature (PG-AU; not redistributed here):**
+
+* *Le Petit Prince* — [https://gutenberg.net.au/ebooks03/0300771h.html](https://gutenberg.net.au/ebooks03/0300771h.html) — **Public Domain (UK)**; **not PD in the US** — accessed 20/08/2025.
+  *Reason for omission:* GitHub is US-based; I therefore **do not host** the text and instead provide a **synthetic** French subset (below).
+
+### Synthetic subsets (details & licence)
+
+**`scape/datasets/dev_simple.txt` — MCTest-style synthetic (English).**
+
+* **Why synthetic?** The MCTest dataset is distributed under a Microsoft Research licence that typically **prohibits redistribution**; therefore the original MCTest sentences are **not** included.
+* **How created:** 200 **original** sentences generated with ChatGPT on 20/08/2025, prompted to resemble the **style** and **reading level** of MCTest (no quotes; no copying).
+* **Licence:** **CC0 1.0** — [https://creativecommons.org/publicdomain/zero/1.0/](https://creativecommons.org/publicdomain/zero/1.0/)
+* **Provenance note:** Under OpenAI’s Terms, outputs are owned by the user to the extent permitted by law.
+
+**`scape/datasets/gau_simple.txt` — French children’s-story synthetic.**
+
+* **Why synthetic?** *Le Petit Prince* is PD in the UK but **not** in the US; to avoid US distribution issues on GitHub, the original text is **not** included.
+* **How created:** 200 **original** French sentences generated with ChatGPT on 20/08/2025 in the **style** of a simple children’s story (no quotes; no copying).
+* **Licence:** **CC0 1.0** — [https://creativecommons.org/publicdomain/zero/1.0/](https://creativecommons.org/publicdomain/zero/1.0/)
+* **Provenance note:** As above.
+
+> **Separation of licences:** Synthetic files (CC0) are kept separate from Wikipedia-derived files (CC BY-SA). Do not merge them into single files, or the merged files will need to be **CC BY-SA** due to share-alike.
+
+### Code vs data licences
+
+* **Wikipedia-derived data:** **CC BY-SA 4.0** (see licence links above).
+* **Public-domain subsets:** **Public Domain (UK)** (sources listed).
+* **Synthetic subsets (ChatGPT):** **CC0 1.0**.
+* **Code:** choose and declare a code licence (e.g., MIT/Apache/BSD). The code licence is **independent** of data licences.
+
+## Collection method & platform etiquette
+
+Data was fetched from publicly available endpoints at modest rates for research. For bulk use of Wikipedia, Wikimedia recommends the **API or dumps** and a descriptive **User-Agent**; this does not affect the licences above but is good practice.
+
+## How to attribute this dataset (downstream users)
+
+When you use files containing Wikipedia text, include something like:
+
+> “This dataset contains text from Wikipedia, available under the **CC BY-SA 4.0** licence. © Wikipedia contributors. Source article(s): *Artificial intelligence*, *Quantum field theory*, *Philosophy of mind* (accessed 20/08/2025). Changes: sentence segmentation; removal of references/boilerplate; light normalisation. Licence: [https://creativecommons.org/licenses/by-sa/4.0/.”](https://creativecommons.org/licenses/by-sa/4.0/.”)
+
+For synthetic or UK-PD subsets, cite the relevant section above.
 
 ---
 
