@@ -175,7 +175,8 @@ Test_simple, Test_complex, WLC_Test_simple, WLC_Test_complex = get_test_splits(n
 GAU_simple = get_gau_split()
 data = get_all_datasets()
 ```
-> **Note:** If you use the builders to fetch third-party data (e.g., MCTest, PG-AU), you must obtain it from the official source under its licence and must not redistribute it here
+> **Legal note for forks/PRs.** If you *fork* this repository or submit a *pull request*, **do not commit third-party texts** (e.g., MCTest content under MSR-LA, Project Gutenberg Australia texts such as *Le Petit Prince*). Only contribute **code**, **metadata**, or **synthetic/UK-PD** data. PRs adding restricted third-party text will be closed.
+
 ---
 
 ## Performance tips
