@@ -8,6 +8,7 @@ The repo contains:
 * **`scape.scape_t`**: the core SCAPE-T scorer (`scape_t`) and defaults
 * **`scape.dataset_builder.py`**: optional dataset builders for semantic complexity evaluation
 * **`scape.datasets`**: bundled evaluation datasets, importable as Python vars
+> **Note:** In this repository, **`Dev_simple`** and **`GAU_simple`** are **not the same as in the SCAPE-T paper**. They have been **replaced by AI-generated text** for licensing/jurisdiction compliance. See **“Data & Licensing (UK)”** below for details.
 * **Evaluation utilities**: results table + ranking helper
 * **Ablation utilities**: submetric and per-layer ablations
 * **Tuning utilities**: simple evolutionary hyperparameter search
@@ -86,6 +87,7 @@ layer_df, _ = layer_ablation_dev(); print("\nLayer ablations (Dev):"); display(l
 
 
 ### 4) Tune the parameters (evolutionary search)
+> **Note:** In this repository, **`datasets.Dev_simple`** is **AI-generated** (not the same as in the SCAPE-T paper) for licensing reasons. See **“Data & Licensing (UK)”** for details. Results may differ slightly from the paper where the original `dev_simple` was used.
 
 ```python
 from scape.scape_t.tuning import evolutionary_search
@@ -120,10 +122,13 @@ print(f"Best ACC: {best['acc']:.4f}\nBest params: {best['params']}")
 * Module: `scape.datasets`
 * Exposed variables (lists/dicts):
 
-  * `Dev_simple`, `Dev_complex`
-  * `Test_simple`, `Test_complex`
-  * `WLC_Test_simple`, `WLC_Test_complex`
-  * `GAU_simple`
+  * `Dev_simple` *(AI-generated replacement; not the same as in the SCAPE-T paper — see “Data & Licensing (UK)”)*
+  * `Dev_complex`
+  * `Test_simple`
+  * `Test_complex`
+  * `WLC_Test_simple`
+  * `WLC_Test_complex`
+  * `GAU_simple` *(AI-generated replacement; not the same as in the SCAPE-T paper — see “Data & Licensing (UK)”)*
   * `Abstractness_Test` (dict: text/term → class id)
 * Utilities:
 
@@ -155,6 +160,7 @@ print(f"Best ACC: {best['acc']:.4f}\nBest params: {best['params']}")
 * `scape.scape_t.tuning.evolutionary_search(corpus, simple_sents, complex_sents, n_iter=50, n_offspring=5, scale=0.3)`
 
   * Simple evolutionary search over the hyperparameter space using dev pairwise accuracy as the objective.
+> **Note:** If you pass `datasets.Dev_simple`/`GAU_simple` from this repo, remember these are **AI-generated replacements** (different from the SCAPE-T paper). See **“Data & Licensing (UK)”**.
  
 ### Advanced: (Re)build datasets from source
 
@@ -188,10 +194,12 @@ src/
   scape/
     __init__.py
     datasets/                  # data files (txt/jsonl/csv) importable via scape.datasets
-      Dev_simple.txt
-      Dev_complex.txt
-      ...
       abstractness.csv
+      dev_complex.txt
+      dev_simple.txt           # NOTE: AI-generated replacement (not the same as in the SCAPE-T paper) — see Data & Licensing
+      gau_simple.txt           # NOTE: AI-generated replacement (not the same as in the SCAPE-T paper) — see Data & Licensing
+      ...
+      wlc_test_simple.txt
     dataset_builder.py         # (optional) original builders; not used at runtime
     scape_t/
       __init__.py
@@ -226,7 +234,9 @@ If you use SCAPE-T in academic work, please cite the repository and include a li
 * **Two synthetic subsets (ChatGPT)** used for compliance in place of content I may not redistribute:
 
   * `scape/datasets/dev_simple.txt` — **200 AI-generated sentences** in the style of MCTest (no MCTest text included).
+> **Note:** This **replaces** the `dev_simple` group used in the **SCAPE-T paper**. See the licensing rationale in **“Synthetic subsets (details & licence)”** below.
   * `scape/datasets/gau_simple.txt` — **200 AI-generated French sentences** in the style of a children’s story (no *Le Petit Prince* text included).
+> **Note:** This **replaces** the `gau_simple` group used in the **SCAPE-T paper**. See the licensing rationale in **“Synthetic subsets (details & licence)”** below.
 
 ---
 
