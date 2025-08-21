@@ -1,0 +1,1059 @@
+Artificial intelligenceAI is the capability of computational systems to perform tasks typically associated with human intelligence , such as learning , reasoning , problem-solving , perception , and decision-making .
+It is a field of research in computer science that develops and studies methods and software that enable machines to perceive their environment and use learning and intelligence to take actions that maximize their chances of achieving defined goals .
+High-profile applications of AI include advanced web search enginesfor example Google Search ; recommendation systemsused by YouTube , Amazon , and Netflix ; virtual assistantsfor example Google Assistant , Siri , and Alexa ; autonomous vehiclesfor example Waymo ; generative and creative toolsfor example language models and AI art ; and superhuman play and analysis in strategy gamesfor example chess and Go .
+The traditional goals of AI research include learning , reasoning , knowledge representation , planning , natural language processing , perception , and support for robotics .
+Some companies , such as OpenAI , Google DeepMind and Meta , aim to create artificial general intelligenceAGI—AI that can complete virtually any cognitive task at least as well as a human .
+Artificial intelligence was founded as an academic discipline in 1956 , and the field went through multiple cycles of optimism throughout its history , followed by periods of disappointment and loss of funding , known as AI winters .
+Funding and interest vastly increased after 2012 when graphics processing units started being used to accelerate neural networks and deep learning outperformed previous AI techniques .
+This growth accelerated further after 2017 with the transformer architecture .
+In the 2020s , an ongoing period of rapid progress in advanced generative AI became known as the AI boom .
+Generative AI's ability to create and modify content has led to several unintended consequences and harms , which has raised ethical concerns about AI's long-term effects and potential existential risks , prompting discussions about regulatory policies to ensure the safety and benefits of the technology .
+The general problem of simulatingor creating intelligence has been broken into subproblems .
+These consist of particular traits or capabilities that researchers expect an intelligent system to display .
+The traits described below have received the most attention and cover the scope of AI research .
+By the late 1980s and 1990s , methods were developed for dealing with uncertain or incomplete information , employing concepts from probability and economics .
+Even humans rarely use the step-by-step deduction that early AI research could model .
+They solve most of their problems using fast , intuitive judgments .
+Knowledge representation and knowledge engineering allow AI programs to answer questions intelligently and make deductions about real-world facts .
+A knowledge base is a body of knowledge represented in a form that can be used by a program .
+An ontology is the set of objects , relations , concepts , and properties used by a particular domain of knowledge .
+Knowledge bases need to represent things such as objects , properties , categories , and relations between objects ; situations , events , states , and time ; causes and effects ; knowledge about knowledgewhat we know about what other people know ; default reasoningthings that humans assume are true until they are told differently and will remain true even when other facts are changing ; and many other aspects and domains of knowledge .
+There is also the difficulty of knowledge acquisition , the problem of obtaining knowledge for AI applications .
+A rational agent has goals or preferences and takes actions to make them happen .
+In automated decision-making , the agent has preferences—there are some situations it would prefer to be in , and some situations it is trying to avoid .
+It can then choose the action with the maximum expected utility .
+In classical planning , the agent knows exactly what the effect of any action will be .
+It must choose an action by making a probabilistic guess and then reassess the situation to see if the action worked .
+In some problems , the agent's preferences may be uncertain , especially if there are other agents or humans involved .
+These can be learnedfor example with inverse reinforcement learning , or the agent can seek information to improve its preferences .
+Information value theory can be used to weigh the value of exploratory or experimental actions .
+The space of possible future actions and situations is typically intractably large , so the agents must take actions and evaluate situations while being uncertain of what the outcome will be .
+A Markov decision process has a transition model that describes the probability that a particular action will change the state in a particular way and a reward function that supplies the utility of each state and the cost of each action .
+A policy associates a decision with each possible state .
+The policy could be calculatedfor example by iteration , be heuristic , or it can be learned .
+Game theory describes the rational behavior of multiple interacting agents and is used in AI programs that make decisions that involve other agents .
+Machine learning is the study of programs that can improve their performance on a given task automatically .
+It has been a part of AI from the beginning .
+Unsupervised learning analyzes a stream of data and finds patterns and makes predictions without any other guidance .
+Supervised learning requires labeling the training data with the expected answers , and comes in two main varieties : classificationwhere the program must learn to predict what category the input belongs in and regressionwhere the program must deduce a numeric function based on numeric input .
+In reinforcement learning , the agent is rewarded for good responses and punished for bad ones .
+Transfer learning is when the knowledge gained from one problem is applied to a new problem .
+Deep learning is a type of machine learning that runs inputs through biologically inspired artificial neural networks for all of these types of learning .
+Computational learning theory can assess learners by computational complexity , by sample complexityhow much data is required , or by other notions of optimization .
+Natural language processingNLP allows programs to read , write and communicate in human languages .
+Specific problems include speech recognition , speech synthesis , machine translation , information extraction , information retrieval and question answering .
+Margaret Masterman believed that it was meaning and not grammar that was the key to understanding languages , and that thesauri and not dictionaries should be the basis of computational language structure .
+Modern deep learning techniques for NLP include word embeddingrepresenting words , typically as vectors encoding their meaning , transformersa deep learning architecture using an attention mechanism , and others .
+Machine perception is the ability to use input from sensorssuch as cameras , microphones , wireless signals , active lidar , sonar , radar , and tactile sensors to deduce aspects of the world .
+Computer vision is the ability to analyze visual input .
+The field includes speech recognition , image classification , facial recognition , object recognition , object tracking , and robotic perception .
+Affective computing is a field that comprises systems that recognize , interpret , process , or simulate human feeling , emotion , and mood .
+For example , some virtual assistants are programmed to speak conversationally or even to banter humorously ; it makes them appear more sensitive to the emotional dynamics of human interaction , or to otherwise facilitate human–computer interaction .
+However , this tends to give naïve users an unrealistic conception of the intelligence of existing computer agents .
+Moderate successes related to affective computing include textual sentiment analysis and , more recently , multimodal sentiment analysis , wherein AI classifies the effects displayed by a videotaped subject .
+A machine with artificial general intelligence would be able to solve a wide variety of problems with breadth and versatility similar to human intelligence .
+AI research uses a wide variety of techniques to accomplish the goals above .
+There are two very different kinds of search used in AI : state space search and local search .
+State space search searches through a tree of possible states to try to find a goal state .
+For example , planning algorithms search through trees of goals and subgoals , attempting to find a path to a target goal , a process called means-ends analysis .
+Simple exhaustive searches are rarely sufficient for most real-world problems : the search spacethe number of places to search quickly grows to astronomical numbers .
+The result is a search that is too slow or never completes .
+Adversarial search is used for game-playing programs , such as chess or Go .
+It searches through a tree of possible moves and countermoves , looking for a winning position .
+Local search uses mathematical optimization to find a solution to a problem .
+It begins with some form of guess and refines it incrementally .
+Gradient descent is a type of local search that optimizes a set of numerical parameters by incrementally adjusting them to minimize a loss function .
+Variants of gradient descent are commonly used to train neural networks , through the backpropagation algorithm .
+Distributed search processes can coordinate via swarm intelligence algorithms .
+Two popular swarm algorithms used in search are particle swarm optimizationinspired by bird flocking and ant colony optimizationinspired by ant trails .
+Formal logic is used for reasoning and knowledge representation .
+Deductive reasoning in logic is the process of proving a new statementconclusion from other statements that are given and assumed to be truethe premises .
+Proofs can be structured as proof trees , in which nodes are labelled by sentences , and children nodes are connected to parent nodes by inference rules .
+Given a problem and a set of premises , problem-solving reduces to searching for a proof tree whose root node is labelled by a solution of the problem and whose leaf nodes are labelled by premises or axioms .
+In the case of Horn clauses , problem-solving search can be performed by reasoning forwards from the premises or backwards from the problem .
+In the more general case of the clausal form of first-order logic , resolution is a single , axiom-free rule of inference , in which a problem is solved by proving a contradiction from premises that include the negation of the problem to be solved .
+Inference in both Horn clause logic and first-order logic is undecidable , and therefore intractable .
+However , backward reasoning with Horn clauses , which underpins computation in the logic programming language Prolog , is Turing complete .
+Moreover , its efficiency is competitive with computation in other symbolic programming languages .
+It can therefore handle propositions that are vague and partially true .
+Non-monotonic logics , including logic programming with negation as failure , are designed to handle default reasoning .
+Other specialized versions of logic have been developed to describe many complex domains .
+Many problems in AIincluding reasoning , planning , learning , perception , and robotics require the agent to operate with incomplete or uncertain information .
+AI researchers have devised a number of tools to solve these problems using methods from probability theory and economics .
+Precise mathematical tools have been developed that analyze how an agent can make choices and plan , using decision theory , decision analysis , and information value theory .
+These tools include models such as Markov decision processes , dynamic decision networks , game theory and mechanism design .
+Bayesian networks are a tool that can be used for reasoningusing the Bayesian inference algorithm ,g learningusing the expectation–maximization algorithm ,h planningusing decision networks and perceptionusing dynamic Bayesian networks .
+Probabilistic algorithms can also be used for filtering , prediction , smoothing , and finding explanations for streams of data , thus helping perception systems analyze processes that occur over timefor example hidden Markov models or Kalman filters .
+Classifiers are functions that use pattern matching to determine the closest match .
+They can be fine-tuned based on chosen examples using supervised learning .
+All the observations combined with their class labels are known as a data set .
+When a new observation is received , that observation is classified based on previous experience .
+The decision tree is the simplest and most widely used symbolic machine learning algorithm .
+K-nearest neighbor algorithm was the most widely used analogical AI until the mid-1990s , and Kernel methods such as the support vector machineSVM displaced k-nearest neighbor in the 1990s .
+An artificial neural network is based on a collection of nodes also known as artificial neurons , which loosely model the neurons in a biological brain .
+It is trained to recognise patterns ; once trained , it can recognise those patterns in fresh data .
+There is an input , at least one hidden layer of nodes and an output .
+Each node applies a function and once the weight crosses its specified threshold , the data is transmitted to the next layer .
+A network is typically called a deep neural network if it has at least 2 hidden layers .
+Learning algorithms for neural networks use local search to choose the weights that will get the right output for each input during training .
+The most common training technique is the backpropagation algorithm .
+Neural networks learn to model complex relationships between inputs and outputs and find patterns in data .
+In theory , a neural network can learn any function .
+In feedforward neural networks the signal passes in only one direction .
+The term perceptron typically refers to a single-layer neural network .
+Recurrent neural networksRNNs feed the output signal back into the input , which allows short-term memories of previous input events .
+Long short-term memory networksLSTMs are recurrent neural networks that better preserve longterm dependencies and are less sensitive to the vanishing gradient problem .
+Convolutional neural networksCNNs use layers of kernels to more efficiently process local patterns .
+This local processing is especially important in image processing , where the early CNN layers typically identify simple local patterns such as edges and curves , with subsequent layers detecting more complex patterns like textures , and eventually whole objects .
+Deep learning uses several layers of neurons between the network's inputs and outputs .
+The multiple layers can progressively extract higher-level features from the raw input .
+For example , in image processing , lower layers may identify edges , while higher layers may identify the concepts relevant to a human such as digits , letters , or faces .
+Deep learning has profoundly improved the performance of programs in many important subfields of artificial intelligence , including computer vision , speech recognition , natural language processing , image classification , and others .
+The reason that deep learning performs so well in so many applications is not known as of 2021 .
+The sudden success of deep learning in 2012–2015 did not occur because of some new discovery or theoretical breakthroughdeep neural networks and backpropagation had been described by many people , as far back as the 1950si but because of two factors : the incredible increase in computer powerincluding the hundred-fold increase in speed by switching to GPUs and the availability of vast amounts of training data , especially the giant curated datasets used for benchmark testing , such as ImageNet .
+Text-based GPT models are pre-trained on a large corpus of text that can be from the Internet .
+The pretraining consists of predicting the next tokena token being usually a word , subword , or punctuation .
+Throughout this pretraining , GPT models accumulate knowledge about the world and can then generate human-like text by repeatedly predicting the next token .
+Typically , a subsequent training phase makes the model more truthful , useful , and harmless , usually with a technique called reinforcement learning from human feedbackRLHF .
+These can be reduced with RLHF and quality data , but the problem has been getting worse for reasoning systems .
+Such systems are used in chatbots , which allow people to ask a question or request a task in simple text .
+Current models and services include ChatGPT , Claude , Gemini , Copilot , and Meta AI .
+Multimodal GPT models can process different types of datamodalities such as images , videos , sound , and text .
+In the late 2010s , graphics processing unitsGPUs that were increasingly designed with AI-specific enhancements and used with specialized TensorFlow software had replaced previously used central processing unitCPUs as the dominant means for large-scalecommercial and academic machine learning models' training .
+Specialized programming languages such as Prolog were used in early AI research , but general-purpose programming languages like Python have become predominant .
+The transistor density in integrated circuits has been observed to roughly double every 18 months—a trend known as Moore's law , named after the Intel co-founder Gordon Moore , who first identified it .
+Improvements in GPUs have been even faster , a trend sometimes called Huang's law , named after Nvidia co-founder and CEO Jensen Huang .
+AI and machine learning technology is used in most of the essential applications of the 2020s , including : search enginessuch as Google Search , targeting online advertisements , recommendation systemsoffered by Netflix , YouTube or Amazon , driving internet traffic , targeted advertisingAdSense , Facebook , virtual assistantssuch as Siri or Alexa , autonomous vehiclesincluding drones , ADAS and self-driving cars , automatic language translationMicrosoft Translator , Google Translate , facial recognitionApple's FaceID or Microsoft's DeepFace and Google's FaceNet and image labelingused by Facebook , Apple's Photos and TikTok .
+The deployment of AI may be overseen by a chief automation officerCAO .
+The application of AI in medicine and medical research has the potential to increase patient care and quality of life .
+Through the lens of the Hippocratic Oath , medical professionals are ethically compelled to use AI , if applications can more accurately diagnose and treat patients .
+For medical research , AI is an important tool for processing and integrating big data .
+This is particularly important for organoid and tissue engineering development which use microscopy imaging as a key technique in fabrication .
+It has been suggested that AI can overcome discrepancies in funding allocated to different fields of research .
+New AI tools can deepen the understanding of biomedically relevant pathways .
+For example , AlphaFold 22021 demonstrated the ability to approximate , in hours rather than months , the 3D structure of a protein .
+In 2023 , it was reported that AI-guided drug discovery helped find a class of antibiotics capable of killing two different types of drug-resistant bacteria .
+In 2024 , researchers used machine learning to accelerate the search for Parkinson's disease drug treatments .
+Their aim was to identify compounds that block the clumping , or aggregation , of alpha-synucleinthe protein that characterises Parkinson's disease .
+They were able to speed up the initial screening process ten-fold and reduce the cost by a thousand-fold .
+Game playing programs have been used since the 1950s to demonstrate and test AI's most advanced techniques .
+Deep Blue became the first computer chess-playing system to beat a reigning world chess champion , Garry Kasparov , on 11 May 1997 .
+In March 2016 , AlphaGo won 4 out of 5 games of Go in a match with Go champion Lee Sedol , becoming the first computer Go-playing system to beat a professional Go player without handicaps .
+Then , in 2017 , it defeated Ke Jie , who was the best Go player in the world .
+Other programs handle imperfect-information games , such as the poker-playing program Pluribus .
+DeepMind developed increasingly generalistic reinforcement learning models , such as with MuZero , which could be trained to play chess , Go , or Atari games .
+In 2019 , DeepMind's AlphaStar achieved grandmaster level in StarCraft II , a particularly challenging real-time strategy game that involves incomplete knowledge of what happens on the map .
+In 2021 , an AI agent competed in a PlayStation Gran Turismo competition , winning against four of the world's best Gran Turismo drivers using deep reinforcement learning .
+In 2024 , Google DeepMind introduced SIMA , a type of AI capable of autonomously playing nine previously unseen open-world video games by observing screen output , as well as executing short , specific tasks in response to natural language instructions .
+Large language models , such as GPT-4 , Gemini , Claude , Llama or Mistral , are increasingly used in mathematics .
+These probabilistic models are versatile , but can also produce wrong answers in the form of hallucinations .
+They sometimes need a large database of mathematical problems to learn from , but also methods such as supervised fine-tuning or trained classifiers with human-annotated data to improve answers for new problems and learn from corrections .
+A February 2024 study showed that the performance of some language models for reasoning capabilities in solving math problems not included in their training data was low , even for problems with only minor deviations from trained data .
+One technique to improve their performance involves training the models to produce correct reasoning steps , rather than just the correct result .
+The Alibaba Group developed a version of its Qwen models called Qwen2-Math , that achieved state-of-the-art performance on several mathematical benchmarks , including 84% accuracy on the MATH dataset of competition mathematics problems .
+In January 2025 , Microsoft proposed the technique rStar-Math that leverages Monte Carlo tree search and step-by-step reasoning , enabling a relatively small language model like Qwen-7B to solve 53% of the AIME 2024 and 90% of the MATH benchmark problems .
+Alternatively , dedicated models for mathematical problem solving with higher precision for the outcome including proof of theorems have been developed such as AlphaTensor , AlphaGeometry , AlphaProof and AlphaEvolve all from Google DeepMind , Llemma from EleutherAI , Julius , or Sourcetable .
+When natural language is used to describe mathematical problems , converters can transform such prompts into a formal language such as Lean to define mathematical tasks .
+The experimental model Gemini Deep Think accepts natural language prompts directly and achieved gold medal results in the International Math Olympiad of 2025 .
+Some models have been developed to solve challenging problems and reach good results in benchmark tests , others to serve as educational tools in mathematics .
+According to Nicolas Firzli , director of the World Pensions & Investments Forum , it may be too early to see the emergence of highly innovative AI-informed financial products and services .
+The main applications enhance command and control , communications , sensors , integration and interoperability .
+Research is targeting intelligence collection and analysis , logistics , cyber operations , information operations , and semiautonomous and autonomous vehicles .
+AI technologies enable coordination of sensors and effectors , threat detection and identification , marking of enemy positions , target acquisition , coordination and deconfliction of distributed Joint Fires between networked combat vehicles , both human-operated and autonomous .
+AI has been used in military operations in Iraq , Syria , Israel and Ukraine .
+Generative artificial intelligenceGenerative AI , GenAI , or GAI is a subfield of artificial intelligence that uses generative models to produce text , images , videos , or other forms of data .
+These models learn the underlying patterns and structures of their training data and use them to produce new data based on the input , which often comes in the form of natural language prompts .
+Generative AI tools have become more common since the AI boom in the 2020s .
+This boom was made possible by improvements in transformer-based deep neural networks , particularly large language modelsLLMs .
+Major tools include chatbots such as ChatGPT , Copilot , Gemini , Claude , Grok , and DeepSeek ; text-to-image models such as Stable Diffusion , Midjourney , and DALL-E ; and text-to-video models such as Veo and Sora .
+Technology companies developing generative AI include OpenAI , xAI , Anthropic , Meta AI , Microsoft , Google , DeepSeek , and Baidu .
+AI agents are software entities designed to perceive their environment , make decisions , and take actions autonomously to achieve specific goals .
+These agents can interact with users , their environment , or other agents .
+AI agents are used in various applications , including virtual assistants , chatbots , autonomous vehicles , game-playing systems , and industrial robotics .
+AI agents operate within the constraints of their programming , available computational resources , and hardware limitations .
+This means they are restricted to performing tasks within their defined scope and have finite memory and processing capabilities .
+In real-world applications , AI agents often face time constraints for decision-making and action execution .
+Many AI agents incorporate learning algorithms , enabling them to improve their performance over time through experience or training .
+Using machine learning , AI agents can adapt to new situations and optimise their behaviour for their designated tasks .
+Applications of AI in this domain include AI-enabled menstruation and fertility trackers that analyze user data to offer predictions , AI-integrated sex toysfor example teledildonics , AI-generated sexual education content , and AI agents that simulate sexual and romantic partnersfor example Replika .
+AI is also used for the production of non-consensual deepfake pornography , raising significant ethical and legal concerns .
+AI technologies have also been used to attempt to identify online gender-based violence and online sexual grooming of minors .
+There are also thousands of successful AI applications used to solve specific problems for specific industries or institutions .
+A few examples are energy storage , medical diagnosis , military logistics , applications that predict the result of judicial decisions , foreign policy , or supply chain management .
+AI applications for evacuation and disaster management are growing .
+AI has been used to investigate patterns in large-scale and small-scale evacuations using historical data from GPS , videos or social media .
+Furthermore , AI can provide real-time information on the evacuation conditions .
+In agriculture , AI has helped farmers to increase yield and identify areas that need irrigation , fertilization , pesticide treatments .
+AI has been used to predict the ripening time for crops such as tomatoes , monitor soil moisture , operate agricultural robots , conduct predictive analytics , classify livestock pig call emotions , automate greenhouses , detect diseases and pests , and save water .
+Additionally , it could be used for activities in space , such as space exploration , including the analysis of data from space missions , real-time science decisions of spacecraft , space debris avoidance , and more autonomous operation .
+During the 2024 Indian elections , US$50 million was spent on authorized AI-generated content , notably by creating deepfakes of alliedincluding sometimes deceased politicians to better engage with voters , and by translating speeches to various local languages .
+However , as the use of AI has become widespread , several unintended consequences and risks have been identified .
+In-production systems can sometimes not factor ethics and bias into their AI training processes , especially when the AI algorithms are inherently unexplainable in deep learning .
+The techniques used to acquire this data have raised concerns about privacy , surveillance and copyright .
+AI-powered devices and services , such as virtual assistants and IoT products , continuously collect personal information , raising concerns about intrusive data gathering and unauthorized access by third parties .
+The loss of privacy is further exacerbated by AI's ability to process and combine vast amounts of data , potentially leading to a surveillance society where individual activities are constantly monitored and analyzed without adequate safeguards or transparency .
+Sensitive user data collected may include online activity records , geolocation data , video , or audio .
+For example , in order to build speech recognition algorithms , Amazon has recorded millions of private conversations and allowed temporary workers to listen to and transcribe some of them .
+Opinions about this widespread surveillance range from those who see it as a necessary evil to those for whom it is clearly unethical and a violation of the right to privacy .
+AI developers argue that this is the only way to deliver valuable applications and have developed several techniques that attempt to preserve privacy while still obtaining the data , such as data aggregation , de-identification and differential privacy .
+Since 2016 , some privacy experts , such as Cynthia Dwork , have begun to view privacy in terms of fairness .
+In 2023 , leading authorsincluding John Grisham and Jonathan Franzen sued AI companies for using their work to train generative AI .
+Another discussed approach is to envision a separate sui generis system of protection for creations generated by AI to ensure fair attribution and compensation for human authors .
+The commercial AI scene is dominated by Big Tech companies such as Alphabet Inc .
+Some of these players already own the vast majority of existing cloud infrastructure and computing power from data centers , allowing them to entrench further in the marketplace .
+In January 2024 , the International Energy AgencyIEA released Electricity 2024 , Analysis and Forecast to 2026 , forecasting electric power use .
+This is the first IEA report to make projections for data centers and power consumption for artificial intelligence and cryptocurrency .
+The report states that power demand for these uses might double by 2026 , with additional electric power usage equal to electricity used by the whole Japanese nation .
+Prodigious power consumption by AI is responsible for the growth of fossil fuel use , and might delay closings of obsolete , carbon-emitting coal energy facilities .
+There is a feverish rise in the construction of data centers throughout the US , making large technology firmsfor example Microsoft , Meta , Google , Amazon into voracious consumers of electric power .
+Projected electric consumption is so immense that there is concern that it will be fulfilled no matter the source .
+A ChatGPT search involves the use of 10 times the electrical energy as a Google search .
+The large firms are in haste to find power sources – from nuclear energy to geothermal to fusion .
+The tech firms argue that – in the long view – AI will be eventually kinder to the environment , but they need the energy now .
+Data centers' need for more and more electrical power is such that they might max out the electrical grid .
+The Big Tech companies counter that AI can be used to maximize the utilization of the grid by all .
+In 2024 , the Wall Street Journal reported that big AI companies have begun negotiations with the US nuclear power providers to provide electricity to the data centers .
+In March 2024 Amazon purchased a Pennsylvania nuclear-powered data center for US$650 million .
+Nvidia CEO Jensen Huang said nuclear power is a good option for the data centers .
+In September 2024 , Microsoft announced an agreement with Constellation Energy to re-open the Three Mile Island nuclear power plant to provide Microsoft with 100% of all electric power produced by the plant for 20 years .
+Reopening the plant , which suffered a partial nuclear meltdown of its Unit 2 reactor in 1979 , will require Constellation to get through strict regulatory processes which will include extensive safety scrutiny from the US Nuclear Regulatory Commission .
+If approvedthis will be the first ever US re-commissioning of a nuclear plant , over 835 megawatts of power – enough for 800 , homes – of energy will be produced .
+The cost for re-opening and upgrading is estimated at US$1 .
+The US government and the state of Michigan are investing almost US$2 billion to reopen the Palisades Nuclear reactor on Lake Michigan .
+Closed since 2022 , the plant is planned to be reopened in October 2025 .
+The Three Mile Island facility will be renamed the Crane Clean Energy Center after Chris Crane , a nuclear proponent and former CEO of Exelon who was responsible for Exelon's spinoff of Constellation .
+After the last approval in September 2023 , Taiwan suspended the approval of data centers north of Taoyuan with a capacity of more than 5 MW in 2024 , due to power supply shortages .
+Taiwan aims to phase out nuclear power by 2025 .
+On the other hand , Singapore imposed a ban on the opening of data centers in 2019 due to electric power , but in 2022 , lifted this ban .
+Although most nuclear plants in Japan have been shut down after the 2011 Fukushima nuclear accident , according to an October 2024 Bloomberg article in Japanese , cloud gaming services company Ubitus , in which Nvidia has a stake , is looking for land in Japan near nuclear power plant for a new data center for generative AI .
+Ubitus CEO Wesley Kuo said nuclear power plants are the most efficient , cheap and stable power for AI .
+On 1 November 2024 , the Federal Energy Regulatory CommissionFERC rejected an application submitted by Talen Energy for approval to supply some electricity from the nuclear power station Susquehanna to Amazon's data center .
+Phillips , it is a burden on the electricity grid as well as a significant cost shifting concern to households and other business sectors .
+In 2025 , a report prepared by the International Energy Agency estimated the greenhouse gas emissions from the energy consumption of AI at 180 million tons .
+By 2035 , these emissions could rise to 300–500 million tonnes depending on what measures will be taken .
+The emissions reduction potential of AI was estimated at 5% of the energy sector emissions , but rebound effectsfor example if people switch from public transport to autonomous cars can reduce it .
+YouTube , Facebook and others use recommender systems to guide users to more content .
+These AI programs were given the goal of maximizing user engagementthat is , the only goal was to keep people watching .
+The AI learned that users tended to choose misinformation , conspiracy theories , and extreme partisan content , and , to keep them watching , the AI recommended more of it .
+Users also tended to watch more content on the same subject , so the AI led people into filter bubbles where they received multiple versions of the same misinformation .
+This convinced many users that the misinformation was true , and ultimately undermined trust in institutions , the media and the government .
+The AI program had correctly learned to maximize its goal , but the result was harmful to society .
+In the early 2020s , generative AI began to create images , audio , and texts that are virtually indistinguishable from real photographs , recordings , or human writing , while realistic AI-generated videos became feasible in the mid-2020s .
+It is possible for bad actors to use this technology to create massive amounts of misinformation or propaganda ; one such potential malicious use is deepfakes for computational propaganda .
+Machine learning applications will be biasedk if they learn from biased data .
+The developers may not be aware that the bias exists .
+Bias can be introduced by the way training data is selected and by the way a model is deployed .
+If a biased algorithm is used to make decisions that can seriously harm peopleas it can in medicine , finance , recruitment , housing or policing then the algorithm may cause discrimination .
+The field of fairness studies how to prevent harms from algorithmic biases .
+Eight years later , in 2023 , Google Photos still could not identify a gorilla , and neither could similar products from Apple , Facebook , Microsoft and Amazon .
+COMPAS is a commercial program widely used by U .
+In 2016 , Julia Angwin at ProPublica discovered that COMPAS exhibited racial bias , despite the fact that the program was not told the races of the defendants .
+Although the error rate for both whites and blacks was calibrated equal at exactly 61% , the errors for each race were different—the system consistently overestimated the chance that a black person would re-offend and would underestimate the chance that a white person would not re-offend .
+In 2017 , several researchersl showed that it was mathematically impossible for COMPAS to accommodate all possible measures of fairness when the base rates of re-offense were different for whites and blacks in the data .
+If they are trained on data that includes the results of racist decisions in the past , machine learning models must predict that racist decisions will be made in the future .
+Thus , machine learning is not well suited to help make decisions in areas where there is hope that the future will be better than the past .
+There are various conflicting definitions and mathematical models of fairness .
+These notions depend on ethical assumptions , and are influenced by beliefs about society .
+One broad category is distributive fairness , which focuses on the outcomes , often identifying groups and seeking to compensate for statistical disparities .
+Representational fairness tries to ensure that AI systems do not reinforce negative stereotypes or render certain groups invisible .
+Procedural fairness focuses on the decision process rather than the outcome .
+The most relevant notions of fairness may depend on the context , notably the type of AI application and the stakeholders .
+The subjectivity in the notions of bias and fairness makes it difficult for companies to operationalize them .
+Having access to sensitive attributes such as race or gender is also considered by many AI ethicists to be necessary in order to compensate for biases , but it may conflict with anti-discrimination laws .
+At its 2022 Conference on Fairness , Accountability , and TransparencyACM FAccT 2022 , the Association for Computing Machinery , in Seoul , South Korea , presented and published findings that recommend that until AI and robotics systems are demonstrated to be free of bias mistakes , they are unsafe , and the use of self-learning neural networks trained on vast , unregulated sources of flawed internet data should be curtailed .
+Particularly with deep neural networks , in which there are many non-linear relationships between inputs and outputs .
+It is impossible to be certain that a program is operating correctly if no one knows how exactly it works .
+There have been many cases where a machine learning program passed rigorous tests , but nevertheless learned something different than what the programmers intended .
+Having asthma is actually a severe risk factor , but since the patients having asthma would usually get much more medical care , they were relatively unlikely to die according to the training data .
+The correlation between asthma and low risk of dying from pneumonia was real , but misleading .
+People who have been harmed by an algorithm's decision have a right to an explanation .
+Doctors , for example , are expected to clearly and completely explain to their colleagues the reasoning behind any decision they make .
+Early drafts of the European Union's General Data Protection Regulation in 2016 included an explicit statement that this right exists .
+Regulators argued that nevertheless the harm is real : if the problem has no solution , the tools should not be used .
+SHAP enables to visualise the contribution of each feature to the output .
+LIME can locally approximate a model's outputs with a simpler , interpretable model .
+Multitask learning provides a large number of outputs in addition to the target classification .
+These other outputs can help developers deduce what the network has learned .
+Deconvolution , DeepDream and other generative methods can allow developers to see what different layers of a deep network for computer vision have learned , and produce output that can suggest what the network is learning .
+For generative pre-trained transformers , Anthropic developed a technique based on dictionary learning that associates patterns of neuron activations with human-understandable concepts .
+Artificial intelligence provides a number of tools that are useful to bad actors , such as authoritarian governments , terrorists , criminals or rogue states .
+A lethal autonomous weapon is a machine that locates , selects and engages human targets without human supervision .
+Even when used in conventional warfare , they currently cannot reliably choose targets and could potentially kill an innocent person .
+In 2014 , nationsincluding China supported a ban on autonomous weapons under the United Nations' Convention on Certain Conventional Weapons , however the United States and others disagreed .
+By 2015 , over fifty countries were reported to be researching battlefield robots .
+AI tools make it easier for authoritarian governments to efficiently control their citizens in several ways .
+Machine learning , operating this data , can classify potential enemies of the state and prevent them from hiding .
+Recommendation systems can precisely target propaganda and misinformation for maximum effect .
+Advanced AI can make authoritarian centralized decision-making more competitive than liberal and decentralized systems such as markets .
+It lowers the cost and difficulty of digital warfare and advanced spyware .
+All these technologies have been available since 2020 or earlier—AI facial recognition systems are already being used for mass surveillance in China .
+There are many other ways in which AI is expected to help bad actors , some of which can not be foreseen .
+For example , machine-learning AI is able to design tens of thousands of toxic molecules in a matter of hours .
+Economists have frequently highlighted the risks of redundancies from AI , and speculated about unemployment if there is no adequate social policy for full employment .
+A survey of economists showed disagreement about whether the increasing use of robots and AI will cause a substantial increase in long-term unemployment , but they generally agree that it could be a net benefit if productivity gains are redistributed .
+Risk estimates vary ; for example , in the 2010s , Michael Osborne and Carl Benedikt Frey estimated 47% of U .
+In April 2023 , it was reported that 70% of the jobs for Chinese video game illustrators had been eliminated by generative artificial intelligence .
+Jobs at extreme risk range from paralegals to fast food cooks , while job demand is likely to increase for care-related professions ranging from personal healthcare to the clergy .
+From the early days of the development of artificial intelligence , there have been arguments , for example , those put forward by Joseph Weizenbaum , about whether tasks that can be done by computers actually should be done by them , given the difference between computers and humans , and between quantitative calculation and qualitative , value-based judgement .
+It has been argued AI will become so powerful that humanity may irreversibly lose control of it .
+First , AI does not require human-like sentience to be an existential risk .
+Modern AI programs are given specific goals and use learning and intelligence to achieve them .
+Philosopher Nick Bostrom argued that if one gives almost any goal to a sufficiently powerful AI , it may choose to destroy humanity to achieve ithe used the example of a paperclip maximizer .
+Second , Yuval Noah Harari argues that AI does not require a robot body or physical control to pose an existential risk .
+Things like ideologies , law , government , money and the economy are built on language ; they exist because there are stories that billions of people believe .
+The current prevalence of misinformation suggests that an AI could use language to convince people to believe anything , even to take actions that are destructive .
+The opinions amongst experts and industry insiders are mixed , with sizable fractions both concerned and unconcerned by risk from eventual superintelligent AI .
+Personalities such as Stephen Hawking , Bill Gates , and Elon Musk , as well as AI pioneers such as Yoshua Bengio , Stuart Russell , Demis Hassabis , and Sam Altman , have expressed concerns about existential risk from AI .
+He notably mentioned risks of an AI takeover , and stressed that in order to avoid the worst outcomes , establishing safety guidelines will require cooperation among those competing in use of AI .
+However , after 2016 , the study of current and future risks and possible solutions became a serious area of research .
+Friendly AI are machines that have been designed from the beginning to minimize risks and to make choices that benefit humans .
+Eliezer Yudkowsky , who coined the term , argues that developing friendly AI should be a higher research priority : it may require a large investment and it must be completed before AI becomes an existential risk .
+Machines with intelligence have the potential to use their intelligence to make ethical decisions .
+The field of machine ethics provides machines with ethical principles and procedures for resolving ethical dilemmas .
+The field of machine ethics is also called computational morality , and was founded at an AAAI symposium in 2005 .
+Active organizations in the AI open-source community include Hugging Face , Google , EleutherAI and Meta .
+Open-weight models can be freely fine-tuned , which allows companies to specialize them with their own data and for their own use-case .
+Open-weight models are useful for research and innovation but can also be misused .
+Since they can be fine-tuned , any built-in security measure , such as objecting to harmful requests , can be trained away until it becomes ineffective .
+Some researchers warn that future AI models may develop dangerous capabilitiessuch as the potential to drastically facilitate bioterrorism and that once released on the Internet , they cannot be deleted everywhere if needed .
+Artificial intelligence projects can be guided by ethical considerations during the design , development , and implementation of an AI system .
+An AI framework such as the Care and Act Framework , developed by the Alan Turing Institute and based on the SUM values , outlines four main ethical dimensions , defined as follows : Other developments in ethical frameworks include those decided upon during the Asilomar Conference , the Montreal Declaration for Responsible AI , and the IEEE's Ethics of Autonomous Systems initiative , among others ; however , these principles are not without criticism , especially regarding the people chosen to contribute to these frameworks .
+Promotion of the wellbeing of the people and communities that these technologies affect requires consideration of the social and ethical implications at all stages of AI system design , development and implementation , and collaboration between job roles such as data scientists , product managers , data engineers , domain experts , and delivery managers .
+It can be used to evaluate AI models in a range of areas including core knowledge , ability to reason , and autonomous capabilities .
+The regulation of artificial intelligence is the development of public sector policies and laws for promoting and regulating AI ; it is therefore related to the broader regulation of algorithms .
+The regulatory and policy landscape for AI is an emerging issue in jurisdictions globally .
+According to AI Index at Stanford , the annual number of AI-related laws passed in the 127 survey countries jumped from one passed in 2016 to 37 passed in 2022 alone .
+Between 2016 and 2020 , more than 30 countries adopted dedicated strategies for AI .
+Most EU member states had released national AI strategies , as had Canada , China , India , Japan , Mauritius , the Russian Federation , Saudi Arabia , United Arab Emirates , U .
+Others were in the process of elaborating their own AI strategy , including Bangladesh , Malaysia and Tunisia .
+The Global Partnership on Artificial Intelligence was launched in June 2020 , stating a need for AI to be developed in accordance with human rights and democratic values , to ensure public confidence and trust in the technology .
+Henry Kissinger , Eric Schmidt , and Daniel Huttenlocher published a joint statement in November 2021 calling for a government commission to regulate AI .
+In 2023 , OpenAI leaders published recommendations for the governance of superintelligence , which they believe may happen in less than 10 years .
+In 2023 , the United Nations also launched an advisory body to provide recommendations on AI governance ; the body comprises technology company executives , government officials and academics .
+On 1 August 2024 , the EU Artificial Intelligence Act entered into force , establishing the first comprehensive EU-wide AI regulation .
+It was adopted by the European Union , the United States , the United Kingdom , and other signatories .
+A 2023 Reuters/Ipsos poll found that 61% of Americans agree , and 22% disagree , that AI poses risks to humanity .
+In November 2023 , the first global AI Safety Summit was held in Bletchley Park in the UK to discuss the near and far term risks of AI and the possibility of mandatory and voluntary regulatory frameworks .
+In May 2024 at the AI Seoul Summit , global AI tech companies agreed to safety commitments on the development of AI .
+The field of AI research was founded at a workshop at Dartmouth College in 1956 .
+Researchers in the 1960s and the 1970s were convinced that their methods would eventually succeed in creating a machine with general intelligence and considered this the goal of their field .
+They had , however , underestimated the difficulty of the problem .
+Minsky and Papert's book Perceptrons was understood as proving that artificial neural networks would never be useful for solving real-world tasks , thus discrediting the approach altogether .
+In the early 1980s , AI research was revived by the commercial success of expert systems , a form of AI program that simulated the knowledge and analytical skills of human experts .
+By 1985 , the market for AI had reached over a billion dollars .
+At the same time , Japan's fifth generation computer project inspired the U .
+However , beginning with the collapse of the Lisp Machine market in 1987 , AI once again fell into disrepute , and a second , longer-lasting winter began .
+Up to this point , most of AI's funding had gone to projects that used high-level symbols to represent mental objects like plans , goals , beliefs , and known facts .
+In 1990 , Yann LeCun successfully showed that convolutional neural networks can recognize handwritten digits , the first of many successful applications of neural networks .
+AI gradually restored its reputation in the late 1990s and early 21st century by exploiting formal mathematical methods and by finding specific solutions to specific problems .
+However , several academic researchers became concerned that AI was no longer pursuing its original goal of creating versatile , fully intelligent machines .
+Deep learning began to dominate industry benchmarks in 2012 and was adopted throughout the field .
+For many specific tasks , other methods were abandoned .
+Deep learning's success led to an enormous increase in interest and funding in AI .
+In 2016 , issues of fairness and the misuse of technology were catapulted into center stage at machine learning conferences , publications vastly increased , funding became available , and many researchers re-focussed their careers on these issues .
+The alignment problem became a serious field of academic study .
+In the late 2010s and early 2020s , AGI companies began to deliver programs that created enormous interest .
+In 2015 , AlphaGo , developed by DeepMind , beat the world champion Go player .
+The program taught only the game's rules and developed a strategy by itself .
+GPT-3 is a large language model that was released in 2020 by OpenAI and is capable of generating high-quality human-like text .
+ChatGPT , launched on November 30 , 2022 , became the fastest-growing consumer software application in history , gaining over 100 million users in two months .
+It marked what is widely regarded as AI's breakout year , bringing it into the public consciousness .
+These programs , and others , inspired an aggressive AI boom , where large companies began investing billions of dollars in AI research .
+According to PitchBook research , 22% of newly funded startups in 2024 claimed to be AI companies .
+Philosophical debates have historically sought to determine the nature of intelligence and how to make intelligent machines .
+Another major focus has been whether machines can be conscious , and the associated ethical implications .
+Many other topics in philosophy are relevant to AI , such as epistemology and free will .
+Rapid advancements have intensified public discussions on the philosophy and ethics of AI .
+He devised the Turing test , which measures the ability of a machine to simulate human conversation .
+However , they are critical that the test requires the machine to imitate humans .
+The leading AI textbook defines it as the study of agents that perceive their environment and take actions that maximize their chances of achieving defined goals .
+Another definition has been adopted by Google , a major practitioner in the field of AI .
+This definition stipulates the ability of systems to synthesize information as the manifestation of intelligence , similar to the way it is defined in biological intelligence .
+As a result of the many circulating definitions scholars have started to critically analyze and order the AI discourse itself including discussing the many AI narratives and myths to be found within societal , political and academic discourses .
+There has been debate over whether large language models exhibit genuine intelligence or merely simulate it by imitating human text .
+No established unifying theory or paradigm has guided AI research for most of its history .
+This approach is mostly sub-symbolic , soft and narrow .
+Critics argue that these questions may have to be revisited by future generations of AI researchers .
+Although his arguments had been ridiculed and ignored when they were first presented , eventually , AI research came to agree with him .
+Critics such as Noam Chomsky argue continuing research into symbolic AI will still be necessary to attain general intelligence , in part because sub-symbolic AI is a move away from explainable AI : it can be difficult or impossible to understand why a modern statistical AI program made a particular decision .
+The emerging field of neuro-symbolic artificial intelligence attempts to bridge the two approaches .
+Neats defend their programs with theoretical rigor , scruffies rely mainly on incremental testing to see if they work .
+This issue was actively discussed in the 1970s and 1980s , but eventually was seen as irrelevant .
+Finding a provably correct or optimal solution is intractable for many important problems .
+Soft computing is a set of techniques , including genetic algorithms , fuzzy logic and neural networks , that are tolerant of imprecision , uncertainty , partial truth and approximation .
+Soft computing was introduced in the late 1980s and most successful AI programs in the 21st century are examples of soft computing with neural networks .
+AI researchers are divided as to whether to pursue the goals of artificial general intelligence and superintelligence directly or to solve as many specific problems as possiblenarrow AI in hopes these solutions will lead indirectly to the field's long-term goals .
+General intelligence is difficult to define and difficult to measure , and modern AI has had more verifiable successes by focusing on specific problems with specific solutions .
+The sub-field of artificial general intelligence studies this area exclusively .
+There is no settled consensus in philosophy of mind on whether a machine can have a mind , consciousness and mental states in the same sense that human beings do .
+This issue considers the internal experiences of the machine , rather than its external behavior .
+Mainstream AI research considers this issue irrelevant because it does not affect the goals of the field : to build machines that can solve problems using intelligence .
+It is also typically the central question at issue in artificial intelligence in fiction .
+The easy problem is understanding how the brain processes signals , makes plans and controls behavior .
+The hard problem is explaining how this feels or why it should feel like anything at all , assuming we are right in thinking that it truly does feel like somethingDennett's consciousness illusionism says this is an illusion .
+While human information processing is easy to explain , human subjective experience is difficult to explain .
+For example , it is easy to imagine a color-blind person who has learned to identify which objects in their field of view are red , but it is not clear what would be required for the person to know what red looks like .
+Computationalism is the position in the philosophy of mind that the human mind is an information processing system and that thinking is a form of computing .
+Computationalism argues that the relationship between mind and body is similar or identical to the relationship between software and hardware and thus may be a solution to the mind–body problem .
+This philosophical position was inspired by the work of AI researchers and cognitive scientists in the 1960s and was originally proposed by philosophers Jerry Fodor and Hilary Putnam .
+It is difficult or impossible to reliably evaluate whether an advanced AI is sentienthas the ability to feel , and if so , to what degree .
+But if there is a significant chance that a given machine can feel and suffer , then it may be entitled to certain rights or welfare protection measures , similarly to animals .
+Sapiencea set of capacities related to high intelligence , such as discernment or self-awareness may provide another moral basis for AI rights .
+Robot rights are also sometimes proposed as a practical way to integrate autonomous agents into society .
+Similarly to the legal status of companies , it would have conferred rights but also responsibilities .
+Critics argued in 2018 that granting rights to AI systems would downplay the importance of human rights , and that legislation should focus on user needs rather than speculative futuristic scenarios .
+They also noted that robots lacked the autonomy to take part in society on their own .
+Proponents of AI welfare and rights often argue that AI sentience , if it emerges , would be particularly easy to deny .
+They warn that this may be a moral blind spot analogous to slavery or factory farming , which could lead to large-scale suffering if sentient AI is created and carelessly exploited .
+A superintelligence is a hypothetical agent that would possess intelligence far surpassing that of the brightest and most gifted human mind .
+If research into artificial general intelligence produced sufficiently intelligent software , it might be able to reprogram and improve itself .
+The improved software would be even better at improving itself , leading to what I J .
+However , technologies cannot improve exponentially indefinitely , and typically follow an S-shaped curve , slowing when they reach the physical limits of what the technology can do .
+Robot designer Hans Moravec , cyberneticist Kevin Warwick and inventor Ray Kurzweil have predicted that humans and machines may merge in the future into cyborgs that are more capable and powerful than either .
+This idea , called transhumanism , has roots in the writings of Aldous Huxley and Robert Ettinger .
+Thought-capable artificial beings have appeared as storytelling devices since antiquity , and have been a persistent theme in science fiction .
+A common trope in these works began with Mary Shelley's Frankenstein , where a human creation becomes a threat to its masters .
+Clarke's and Stanley Kubrick's 2001 : A Space Odysseyboth 1968 , with HAL 9000 , the murderous computer in charge of the Discovery One spaceship , as well as The Terminator1984 and The Matrix1999 .
+In contrast , the rare loyal robots such as Gort from The Day the Earth Stood Still1951 and Bishop from Aliens1986 are less prominent in popular culture .
+Asimov's laws are often brought up during lay discussions of machine ethics ; while almost all artificial intelligence researchers are familiar with Asimov's laws through popular culture , they generally consider the laws useless for many reasons , one of which is their ambiguity .
+Several works use AI to force us to confront the fundamental question of what makes us human , showing us artificial beings that have the ability to feel , and thus to suffer .
+I Artificial Intelligence and Ex Machina , as well as the novel Do Androids Dream of Electric Sheep ?
+Dick considers the idea that our understanding of human subjectivity is altered by technology created with artificial intelligence .
+The two most widely used textbooks in 2023see the Open Syllabus : The four most widely used AI textbooks in 2008 : Other textbooks : In theoretical physics , quantum field theoryQFT is a theoretical framework that combines field theory and the principle of relativity with ideas behind quantum mechanics .
+QFT is used in particle physics to construct physical models of subatomic particles and in condensed matter physics to construct models of quasiparticles .
+The current standard model of particle physics is based on QFT .
+Quantum field theory emerged from the work of generations of theoretical physicists spanning much of the 20th century .
+Its development began in the 1920s with the description of interactions between light and electrons , culminating in the first quantum field theory—quantum electrodynamics .
+A major theoretical obstacle soon followed with the appearance and persistence of various infinities in perturbative calculations , a problem only resolved in the 1950s with the invention of the renormalization procedure .
+A second major barrier came with QFT's apparent inability to describe the weak and strong interactions , to the point where some theorists called for the abandonment of the field theoretic approach .
+The development of gauge theory and the completion of the Standard Model in the 1970s led to a renaissance of quantum field theory .
+Quantum field theory results from the combination of classical field theory , quantum mechanics , and special relativity .
+The earliest successful classical field theory is one that emerged from Newton's law of universal gravitation , despite the complete absence of the concept of fields from his 1687 treatise Philosophiæ Naturalis Principia Mathematica .
+It was not until the 18th century that mathematical physicists discovered a convenient description of gravity based on fields—a numerical quantitya vector in the case of gravitational field assigned to every point in space indicating the action of gravity on any particle at that point .
+However , this was considered merely a mathematical trick .
+Fields began to take on an existence of their own with the development of electromagnetism in the 19th century .
+He introduced fields as properties of spaceeven when it is devoid of matter having physical effects .
+The theory of classical electromagnetism was completed in 1864 with Maxwell's equations , which described the relationship between the electric field , the magnetic field , electric current , and electric charge .
+Maxwell's equations implied the existence of electromagnetic waves , a phenomenon whereby electric and magnetic fields propagate from one spatial point to another at a finite speed , which turns out to be the speed of light .
+Despite the enormous success of classical electromagnetism , it was unable to account for the discrete lines in atomic spectra , nor for the distribution of blackbody radiation in different wavelengths .
+Max Planck's study of blackbody radiation marked the beginning of quantum mechanics .
+He treated atoms , which absorb and emit electromagnetic radiation , as tiny oscillators with the crucial property that their energies can only take on a series of discrete , rather than continuous , values .
+This process of restricting energies to discrete values is called quantization .
+Building on this idea , Albert Einstein proposed in 1905 an explanation for the photoelectric effect , that light is composed of individual packets of energy called photonsthe quanta of light .
+This implied that the electromagnetic radiation , while being waves in the classical electromagnetic field , also exists in the form of particles .
+In 1913 , Niels Bohr introduced the Bohr model of atomic structure , wherein electrons within atoms can only take on a series of discrete , rather than continuous , energies .
+The Bohr model successfully explained the discrete nature of atomic spectral lines .
+In 1924 , Louis de Broglie proposed the hypothesis of wave–particle duality , that microscopic particles exhibit both wave-like and particle-like properties under different circumstances .
+Uniting these scattered ideas , a coherent discipline , quantum mechanics , was formulated between 1925 and 1926 , with important contributions from Max Planck , Louis de Broglie , Werner Heisenberg , Max Born , Erwin Schrödinger , Paul Dirac , and Wolfgang Pauli .
+–23 In the same year as his paper on the photoelectric effect , Einstein published his theory of special relativity , built on Maxwell's electromagnetism .
+New rules , called Lorentz transformations , were given for the way time and space coordinates of an event change under changes in the observer's velocity , and the distinction between time and space was blurred .
+Observationally , the Schrödinger equation underlying quantum mechanics could explain the stimulated emission of radiation from atoms , where an electron emits a new photon under the action of an external electromagnetic field , but it was unable to explain spontaneous emission , where an electron spontaneously decreases in energy and emits a photon even without the action of an external electromagnetic field .
+Theoretically , the Schrödinger equation could not describe photons and was inconsistent with the principles of special relativity—it treats time as an ordinary number while promoting spatial coordinates to linear operators .
+Quantum field theory naturally began with the study of electromagnetic interactions , as the electromagnetic field was the only known classical field as of the 1920s .
+Through the works of Born , Heisenberg , and Pascual Jordan in 1925–1926 , a quantum theory of the free electromagnetic fieldone with no interactions with matter was developed via canonical quantization by treating the electromagnetic field as a set of quantum harmonic oscillators .
+With the exclusion of interactions , however , such a theory was yet incapable of making quantitative predictions about the real world .
+In his seminal 1927 paper The quantum theory of the emission and absorption of radiation , Dirac coined the term quantum electrodynamicsQED , a theory that adds upon the terms describing the free electromagnetic field an additional interaction term between electric current density and the electromagnetic vector potential .
+Using first-order perturbation theory , he successfully explained the phenomenon of spontaneous emission .
+According to the uncertainty principle in quantum mechanics , quantum harmonic oscillators cannot remain stationary , but they have a non-zero minimum energy and must always be oscillating , even in the lowest energy statethe ground state .
+Therefore , even in a perfect vacuum , there remains an oscillating electromagnetic field having zero-point energy .
+Dirac's theory was hugely successful in explaining both the emission and absorption of radiation by atoms ; by applying second-order perturbation theory , it was able to account for the scattering of photons , resonance fluorescence and non-relativistic Compton scattering .
+Nonetheless , the application of higher-order perturbation theory was plagued with problematic infinities in calculations .
+In 1928 , Dirac wrote down a wave equation that described relativistic electrons : the Dirac equation .
+It had the following important consequences : the spin of an electron is 1/2 ; the electron g-factor is 2 ; it led to the correct Sommerfeld formula for the fine structure of the hydrogen atom ; and it could be used to derive the Klein–Nishina formula for relativistic Compton scattering .
+Although the results were fruitful , the theory also apparently implied the existence of negative energy states , which would cause atoms to be unstable , since they could always decay to lower energy states by the emission of radiation .
+–72 The prevailing view at the time was that the world was composed of two very different ingredients : material particlessuch as electrons and quantum fieldssuch as photons .
+Material particles were considered to be eternal , with their physical state described by the probabilities of finding each particle in any given region of space or range of velocities .
+On the other hand , photons were considered merely the excited states of the underlying quantized electromagnetic field , and could be freely created or destroyed .
+It was between 1928 and 1930 that Jordan , Eugene Wigner , Heisenberg , Pauli , and Enrico Fermi discovered that material particles could also be seen as excited states of quantum fields .
+Just as photons are excited states of the quantized electromagnetic field , so each type of particle had its corresponding quantum field : an electron field , a proton field , and so forth Given enough energy , it would now be possible to create material particles .
+Building on this idea , Fermi proposed in 1932 an explanation for beta decay known as Fermi's interaction .
+Atomic nuclei do not contain electrons per se , but in the process of decay , an electron is created out of the surrounding electron field , analogous to the photon created from the surrounding electromagnetic field in the radiative decay of an excited atom .
+–23 It was realized in 1929 by Dirac and others that negative energy states implied by the Dirac equation could be removed by assuming the existence of particles with the same mass as electrons but opposite electric charge .
+This not only ensured the stability of atoms , but it was also the first proposal of the existence of antimatter .
+Indeed , the evidence for positrons was discovered in 1932 by Carl David Anderson in cosmic rays .
+With enough energy , such as by absorbing a photon , an electron-positron pair could be created , a process called pair production ; the reverse process , annihilation , could also occur with the emission of a photon .
+This showed that particle numbers need not be fixed during an interaction .
+Robert Oppenheimer showed in 1930 that higher-order perturbative calculations in QED always resulted in infinite quantities , such as the electron self-energy and the vacuum zero-point energy of the electron and photon fields , suggesting that the computational methods at the time could not properly deal with interactions involving photons with extremely high momenta .
+It was not until 20 years later that a systematic approach to remove such infinities was developed .
+A series of papers was published between 1934 and 1938 by Ernst Stueckelberg that established a relativistically invariant formulation of QFT .
+In 1947 , Stueckelberg also independently developed a complete renormalization procedure .
+Such achievements were not understood and recognized by the theoretical community .
+Faced with these infinities , John Archibald Wheeler and Heisenberg proposed , in 1937 and 1943 respectively , to supplant the problematic QFT with the so-called S-matrix theory .
+Since the specific details of microscopic interactions are inaccessible to observations , the theory should only attempt to describe the relationships between a small number of observablesfor example the energy of an atom in an interaction , rather than be concerned with the microscopic minutiae of the interaction .
+In 1945 , Richard Feynman and Wheeler daringly suggested abandoning QFT altogether and proposed action-at-a-distance as the mechanism of particle interactions .
+In 1947 , Willis Lamb and Robert Retherford measured the minute difference in the 2S1/2 and 2P1/2 energy levels of the hydrogen atom , also called the Lamb shift .
+By ignoring the contribution of photons whose energy exceeds the electron mass , Hans Bethe successfully estimated the numerical value of the Lamb shift .
+Subsequently , Norman Myles Kroll , Lamb , James Bruce French , and Victor Weisskopf again confirmed this value using an approach in which infinities cancelled other infinities to result in finite quantities .
+However , this method was clumsy and unreliable and could not be generalized to other calculations .
+The breakthrough eventually came around 1950 when a more robust method for eliminating infinities was developed by Julian Schwinger , Richard Feynman , Freeman Dyson , and Shinichiro Tomonaga .
+The main idea is to replace the calculated values of mass and charge , infinite though they may be , by their finite measured values .
+This systematic computational procedure is known as renormalization and can be applied to arbitrary order in perturbation theory .
+As Tomonaga said in his Nobel lecture : Since those parts of the modified mass and charge due to field reactionsbecome infinite , it is impossible to calculate them by the theory .
+However , the mass and charge observed in experiments are not the original mass and charge but the mass and charge as modified by field reactions , and they are finite .
+On the other hand , the mass and charge appearing in the theory are… the values modified by field reactions .
+Since this is so , and particularly since the theory is unable to calculate the modified mass and charge , we may adopt the procedure of substituting experimental values for them phenomenologically .
+This procedure is called the renormalization of mass and charge… After long , laborious calculations , less skillful than Schwinger's , we obtained a result .
+By applying the renormalization procedure , calculations were finally made to explain the electron's anomalous magnetic momentthe deviation of the electron g-factor from 2 and vacuum polarization .
+At the same time , Feynman introduced the path integral formulation of quantum mechanics and Feynman diagrams .
+The latter can be used to visually and intuitively organize and to help compute terms in the perturbative expansion .
+Each diagram can be interpreted as paths of particles in an interaction , with each vertex and line having a corresponding mathematical expression , and the product of these expressions gives the scattering amplitude of the interaction represented by the diagram .
+It was with the invention of the renormalization procedure and Feynman diagrams that QFT finally arose as a complete theoretical framework .
+Given the tremendous success of QED , many theorists believed , in the few years after 1949 , that QFT could soon provide an understanding of all microscopic phenomena , not only the interactions between photons , electrons , and positrons .
+Contrary to this optimism , QFT entered yet another period of depression that lasted for almost two decades .
+The first obstacle was the limited applicability of the renormalization procedure .
+In perturbative calculations in QED , all infinite quantities could be eliminated by redefining a smallfinite number of physical quantitiesnamely the mass and charge of the electron .
+Any perturbative calculation in these theories beyond the first order would result in infinities that could not be removed by redefining a finite number of physical quantities .
+The second major problem stemmed from the limited validity of the Feynman diagram method , which is based on a series expansion in perturbation theory .
+In order for the series to converge and low-order calculations to be a good approximation , the coupling constant , in which the series is expanded , must be a sufficiently small number .
+The coupling constant in QED is the fine-structure constant α ≈ 1/137 , which is small enough that only the simplest , lowest order , Feynman diagrams need to be considered in realistic calculations .
+In contrast , the coupling constant in the strong interaction is roughly of the order of one , making complicated , higher order , Feynman diagrams just as important as simple ones .
+There was thus no way of deriving reliable quantitative predictions for the strong interaction using perturbative QFT methods .
+With these difficulties looming , many theorists began to turn away from QFT .
+Some focused on symmetry principles and conservation laws , while others picked up the old S-matrix theory of Wheeler and Heisenberg .
+QFT was used heuristically as guiding principles , but not as a basis for quantitative calculations .
+For more than a decade he and his students had been nearly the only exponents of field theory , but in 1951 he found a way around the problem of the infinities with a new method using external sources as currents coupled to gauge fields .
+He summarized his source theory in 1966 then expanded the theory's applications to quantum electrodynamics in his three volume-set titled : Particles , Sources , and Fields .
+Developments in pion physics , in which the new viewpoint was most successfully applied , convinced him of the great advantages of mathematical simplicity and conceptual clarity that its use bestowed .
+In source theory there are no divergences , and no renormalization .
+It may be regarded as the calculational tool of field theory , but it is more general .
+Using source theory , Schwinger was able to calculate the anomalous magnetic moment of the electron , which he had done in 1947 , but this time with no ‘distracting remarks’ about infinite quantities .
+Schwinger also applied source theory to his QFT theory of gravity , and was able to reproduce all four of Einstein's classic results : gravitational red shift , deflection and slowing of light by gravity , and the perihelion precession of Mercury .
+The neglect of source theory by the physics community was a major disappointment for Schwinger : The lack of appreciation of these facts by others was depressing , but understandable .
+In 1954 , Yang Chen-Ning and Robert Mills generalized the local symmetry of QED , leading to non-Abelian gauge theoriesalso known as Yang–Mills theories , which are based on more complicated local symmetry groups .
+Unlike photons , these gauge bosons themselves carry charge .
+Sheldon Glashow developed a non-Abelian gauge theory that unified the electromagnetic and weak interactions in 1960 .
+In 1964 , Abdus Salam and John Clive Ward arrived at the same theory through a different path .
+Peter Higgs , Robert Brout , François Englert , Gerald Guralnik , Carl Hagen , and Tom Kibble proposed in their famous Physical Review Letters papers that the gauge symmetry in Yang–Mills theories could be broken by a mechanism called spontaneous symmetry breaking , through which originally massless gauge bosons could acquire mass .
+–6 By combining the earlier theory of Glashow , Salam , and Ward with the idea of spontaneous symmetry breaking , Steven Weinberg wrote down in 1967 a theory describing electroweak interactions between all leptons and the effects of the Higgs boson .
+His theory was at first mostly ignored , until it was brought back to light in 1971 by Gerard 't Hooft's proof that non-Abelian gauge theories are renormalizable .
+The electroweak theory of Weinberg and Salam was extended from leptons to quarks in 1970 by Glashow , John Iliopoulos , and Luciano Maiani , marking its completion .
+Harald Fritzsch , Murray Gell-Mann , and Heinrich Leutwyler discovered in 1971 that certain phenomena involving the strong interaction could also be explained by non-Abelian gauge theory .
+Similar discoveries had been made numerous times previously , but they had been largely ignored .
+Therefore , at least in high-energy interactions , the coupling constant in QCD becomes sufficiently small to warrant a perturbative series expansion , making quantitative predictions for the strong interaction possible .
+These theoretical breakthroughs brought about a renaissance in QFT .
+The full theory , which includes the electroweak theory and chromodynamics , is referred to today as the Standard Model of elementary particles .
+The Standard Model successfully describes all fundamental interactions except gravity , and its many predictions have been met with remarkable experimental confirmation in subsequent decades .
+The Higgs boson , central to the mechanism of spontaneous symmetry breaking , was finally detected in 2012 at CERN , marking the complete verification of the existence of all constituents of the Standard Model .
+The 1970s saw the development of non-perturbative methods in non-Abelian gauge theories .
+The 't Hooft–Polyakov monopole was discovered theoretically by 't Hooft and Alexander Polyakov , flux tubes by Holger Bech Nielsen and Poul Olesen , and instantons by Polyakov and coauthors .
+The first supersymmetric QFT in four dimensions was built by Yuri Golfand and Evgeny Likhtman in 1970 , but their result failed to garner widespread interest due to the Iron Curtain .
+Supersymmetry theories only took off in the theoretical community after the work of Julius Wess and Bruno Zumino in 1973 , but to date have not been widely accepted as part of the Standard Model due to lack of experimental evidence .
+Among the four fundamental interactions , gravity remains the only one that lacks a consistent QFT description .
+Various attempts at a theory of quantum gravity led to the development of string theory , itself a type of two-dimensional QFT with conformal symmetry .
+Joël Scherk and John Schwarz first proposed in 1974 that string theory could be the quantum theory of gravity .
+Although quantum field theory arose from the study of interactions between elementary particles , it has been successfully applied to other physical systems , particularly to many-body systems in condensed matter physics .
+Historically , the Higgs mechanism of spontaneous symmetry breaking was a result of Yoichiro Nambu's application of superconductor theory to elementary particles , while the concept of renormalization came out of the study of second-order phase transitions in matter .
+Soon after the introduction of photons , Einstein performed the quantization procedure on vibrations in a crystal , leading to the first quasiparticle—phonons .
+Lev Landau claimed that low-energy excitations in many condensed matter systems could be described in terms of interactions between a set of quasiparticles .
+The Feynman diagram method of QFT was naturally well suited to the analysis of various phenomena in condensed matter systems .
+Gauge theory is used to describe the quantization of magnetic flux in superconductors , the resistivity in the quantum Hall effect , as well as the relation between frequency and voltage in the AC Josephson effect .
+For simplicity , natural units are used in the following sections , in which the reduced Planck constant ħ and the speed of light c are both set to one .
+A classical field is a function of spatial and time coordinates .
+Examples include the gravitational field in Newtonian gravity gx , t and the electric field Ex , t and magnetic field Bx , t in classical electromagnetism .
+A classical field can be thought of as a numerical quantity assigned to every point in space that changes in time .
+Hence , it has infinitely many degrees of freedom .
+Many phenomena exhibiting quantum mechanical properties cannot be explained by classical fields alone .
+Phenomena such as the photoelectric effect are best explained by discrete particlesphotons , rather than a spatially continuous field .
+The goal of quantum field theory is to describe various quantum mechanical phenomena using a modified concept of fields .
+Canonical quantization and path integrals are two common formulations of QFT .
+To motivate the fundamentals of QFT , an overview of classical field theory follows .
+The simplest classical field is a real scalar field — a real number at every point in space that changes in time .
+It is denoted as ϕx , t , where x is the position vector , and t is the time .
+Applying the Euler–Lagrange equation on the Lagrangian : we obtain the equations of motion for the field , which describe the way it varies in time and space : This is known as the Klein–Gordon equation .
+The Klein–Gordon equation is a wave equation , so its solutions can be expressed as a sum of normal modesobtained via Fourier transform as follows : where a is a complex numbernormalized by convention , denotes complex conjugation , and ωp is the frequency of the normal mode : Thus each normal mode corresponding to a single p can be seen as a classical harmonic oscillator with frequency ωp .
+The quantization procedure for the above classical field to a quantum operator field is analogous to the promotion of a classical harmonic oscillator to a quantum harmonic oscillator .
+The displacement of a classical harmonic oscillator is described by where a is a complex numbernormalized by convention , and ω is the oscillator's frequency .
+Note that x is the displacement of a particle in simple harmonic motion from the equilibrium position , not to be confused with the spatial label x of a quantum field .
+For a quantum harmonic oscillator , xt is promoted to a linear operator x ^ t {\displaystyle {\hat {x}}t} : Complex numbers a and aare replaced by the annihilation operator a ^ {\displaystyle {\hat {a}}} and the creation operator a ^ † {\displaystyle {\hat {a}}^{\dagger }} , respectively , where † denotes Hermitian conjugation .
+The commutation relation between the two is The Hamiltonian of the simple harmonic oscillator can be written as The vacuum state | 0 ⟩ {\displaystyle |0\rangle } , which is the lowest energy state , is defined by and has energy 1 2 ℏ ω .
+} One can easily check that H ^ , a ^ † = ℏ ω a ^ † , {\displaystyle{\hat {H}} , {\hat {a}}^{\dagger }=\hbar \omega {\hat {a}}^{\dagger } , } which implies that a ^ † {\displaystyle {\hat {a}}^{\dagger }} increases the energy of the simple harmonic oscillator by ℏ ω {\displaystyle \hbar \omega } .
+For example , the state a ^ † | 0 ⟩ {\displaystyle {\hat {a}}^{\dagger }|0\rangle } is an eigenstate of energy 3 ℏ ω / 2 {\displaystyle 3\hbar \omega /2} .
+Any energy eigenstate state of a single harmonic oscillator can be obtained from | 0 ⟩ {\displaystyle |0\rangle } by successively applying the creation operator a ^ † {\displaystyle {\hat {a}}^{\dagger }} : and any state of the system can be expressed as a linear combination of the states A similar procedure can be applied to the real scalar field ϕ , by promoting it to a quantum field operator ϕ ^ {\displaystyle {\hat {\phi }}} , while the annihilation operator a ^ p {\displaystyle {\hat {a}}{\mathbf {p} }} , the creation operator a ^ p † {\displaystyle {\hat {a}}{\mathbf {p} }^{\dagger }} and the angular frequency ω p {\displaystyle \omega {\mathbf {p} }} are now for a particular p : Their commutation relations are : where δ is the Dirac delta function .
+The vacuum state | 0 ⟩ {\displaystyle |0\rangle } is defined by Any quantum state of the field can be obtained from | 0 ⟩ {\displaystyle |0\rangle } by successively applying creation operators a ^ p † {\displaystyle {\hat {a}}{\mathbf {p} }^{\dagger }}or by a linear combination of such states , for example : While the state space of a single quantum harmonic oscillator contains all the discrete energy states of one oscillating particle , the state space of a quantum field contains the discrete energy levels of an arbitrary number of particles .
+The latter space is known as a Fock space , which can account for the fact that particle numbers are not fixed in relativistic quantum systems .
+The process of quantizing an arbitrary number of particles instead of a single particle is often also called second quantization .
+The foregoing procedure is a direct application of non-relativistic quantum mechanics and can be used to quantizecomplex scalar fields , Dirac fields , vector fieldsfor example the electromagnetic field , and even strings .
+However , creation and annihilation operators are only well defined in the simplest theories that contain no interactionsso-called free theory .
+In the case of the real scalar field , the existence of these operators was a consequence of the decomposition of solutions of the classical equations of motion into a sum of normal modes .
+To perform calculations on any realistic interacting theory , perturbation theory would be necessary .
+The Lagrangian of any quantum field in nature would contain interaction terms in addition to the free theory terms .
+For example , a quartic interaction term could be introduced to the Lagrangian of the real scalar field : where μ is a spacetime index , ∂ 0 = ∂ / ∂ t , ∂ 1 = ∂ / ∂ x 1 {\displaystyle \partial {0}=\partial /\partial t , \ \partial {1}=\partial /\partial x^{1}} , and so forth The summation over the index μ has been omitted following the Einstein notation .
+If the parameter λ is sufficiently small , then the interacting theory described by the above Lagrangian can be considered as a small perturbation from the free theory .
+The path integral formulation of QFT is concerned with the direct computation of the scattering amplitude of a certain interaction process , rather than the establishment of operators and state spaces .
+To calculate the probability amplitude for a system to evolve from some initial state | ϕ I ⟩ {\displaystyle |\phi {I}\rangle } at time t = 0 to some final state | ϕ F ⟩ {\displaystyle |\phi {F}\rangle } at t = T , the total time T is divided into N small intervals .
+The overall amplitude is the product of the amplitude of evolution within each interval , integrated over all intermediate states .
+The initial and final conditions of the path integral are respectively In other words , the overall amplitude is the sum over the amplitude of every possible path between the initial and final states , where the amplitude of a path is given by the exponential in the integrand .
+In calculations , one often encounters expression like ⟨ 0 | T { ϕ x ϕ y } | 0 ⟩ or ⟨ Ω | T { ϕ x ϕ y } | Ω ⟩ {\displaystyle \langle 0|T\{\phix\phiy\}|0\rangle \quad {\text{or}}\quad \langle \Omega |T\{\phix\phiy\}|\Omega \rangle } in the free or interacting theory , respectively .
+Here , x {\displaystyle x} and y {\displaystyle y} are position four-vectors , T {\displaystyle T} is the time ordering operator that shuffles its operands so the time-components x 0 {\displaystyle x^{0}} and y 0 {\displaystyle y^{0}} increase from right to left , and | Ω ⟩ {\displaystyle |\Omega \rangle } is the ground statevacuum state of the interacting theory , different from the free ground state | 0 ⟩ {\displaystyle |0\rangle } .
+This expression represents the probability amplitude for the field to propagate from y to x , and goes by multiple names , like the two-point propagator , two-point correlation function , two-point Green's function or two-point function for short .
+The free two-point function , also known as the Feynman propagator , can be found for the real scalar field by either canonical quantization or path integrals to be : 31 In an interacting theory , where the Lagrangian or Hamiltonian contains terms L I t {\displaystyle L{I}t} or H I t {\displaystyle H{I}t} that describe interactions , the two-point function is more difficult to define .
+However , through both the canonical quantization formulation and the path integral formulation , it is possible to express it through an infinite perturbation series of the free two-point function .
+In canonical quantization , the two-point correlation function can be written as : where ε is an infinitesimal number and ϕI is the field operator under the free theory .
+Here , the exponential should be understood as its power series expansion .
+For example , in ϕ 4 {\displaystyle \phi ^{4}} -theory , the interacting term of the Hamiltonian is H I t = ∫ d 3 x λ 4 !
+ϕ I x 4 {\textstyle H{I}t=\int d^{3}x\ , {\frac {\lambda }{4 !
+∫ d 4 z 1 ⋯ ∫ d 4 z n ⟨ 0 | T { ϕ I z 1 4 ⋯ ϕ I z n 4 } | 0 ⟩ .
+{\displaystyle \langle \Omega |T\{\phix\phiy\}|\Omega \rangle ={\frac {\displaystyle \sum {n=0}^{\infty }{\frac {-i\lambda ^{n}}{4 !
+}}\int d^{4}z{1}\cdots \int d^{4}z{n}\langle 0|T\{\phi {I}x\phi {I}y\phi {I}z{1}^{4}\cdots \phi {I}z{n}^{4}\}|0\rangle }{\displaystyle \sum {n=0}^{\infty }{\frac {-i\lambda ^{n}}{4 !
+}}\int d^{4}z{1}\cdots \int d^{4}z{n}\langle 0|T\{\phi {I}z{1}^{4}\cdots \phi {I}z{n}^{4}\}|0\rangle }} .
+} This perturbation expansion expresses the interacting two-point function in terms of quantities ⟨ 0 | ⋯ | 0 ⟩ {\displaystyle \langle 0|\cdots |0\rangle } that are evaluated in the free theory .
+In the path integral formulation , the two-point correlation function can be written : where L {\displaystyle {\mathcal {L}}} is the Lagrangian density .
+As in the previous paragraph , the exponential can be expanded as a series in λ , reducing the interacting two-point function to quantities in the free theory .
+Wick's theorem further reduce any n-point correlation function in the free theory to a sum of products of two-point correlation functions .
+For example , Since interacting correlation functions can be expressed in terms of free correlation functions , only the latter need to be evaluated in order to calculate all physical quantities in theperturbative interacting theory .
+This makes the Feynman propagator one of the most important quantities in quantum field theory .
+Correlation functions in the interacting theory can be written as a perturbation series .
+Each term in the series is a product of Feynman propagators in the free theory and can be represented visually by a Feynman diagram .
+For example , the λ1 term in the two-point correlation function in the ϕ4 theory is After applying Wick's theorem , one of the terms is This term can instead be obtained from the Feynman diagram The diagram consists of Every vertex corresponds to a single ϕ {\displaystyle \phi } field factor at the corresponding point in spacetime , while the edges correspond to the propagators between the spacetime points .
+The term in the perturbation series corresponding to the diagram is obtained by writing down the expression that follows from the so-called Feynman rules : With the symmetry factor 2 {\displaystyle 2} , following these rules yields exactly the expression above .
+By Fourier transforming the propagator , the Feynman rules can be reformulated from position space into momentum space .
+–94 In order to compute the n-point correlation function to the k-th order , list all valid Feynman diagrams with n external points and k or fewer vertices , and then use Feynman rules to obtain the expression for each term .
+To be precise , is equal to the sum ofexpressions corresponding to all connected diagrams with n external points .
+Connected diagrams are those in which every vertex is connected to an external point through lines .
+In the ϕ4 interaction theory discussed above , every vertex must have four legs .
+In realistic applications , the scattering amplitude of a certain interaction or the decay rate of a particle can be computed from the S-matrix , which itself can be found using the Feynman diagram method .
+Lines whose end points are vertices can be thought of as the propagation of virtual particles .
+Feynman rules can be used to directly evaluate tree-level diagrams .
+However , naïve computation of loop diagrams such as the one shown above will result in divergent momentum integrals , which seems to imply that almost all terms in the perturbative expansion are infinite .
+The renormalisation procedure is a systematic process for removing such infinities .
+Parameters appearing in the Lagrangian , such as the mass m and the coupling constant λ , have no physical meaning — m , λ , and the field strength ϕ are not experimentally measurable quantities and are referred to here as the bare mass , bare coupling constant , and bare field , respectively .
+The physical mass and coupling constant are measured in some interaction process and are generally different from the bare quantities .
+While computing physical quantities from this interaction process , one may limit the domain of divergent momentum integrals to be below some momentum cut-off Λ , obtain expressions for the physical quantities , and then take the limit Λ → ∞ .
+This is an example of regularization , a class of methods to treat divergences in QFT , with Λ being the regulator .
+The approach illustrated above is called bare perturbation theory , as calculations involve only the bare quantities such as mass and coupling constant .
+A different approach , called renormalized perturbation theory , is to use physically meaningful quantities from the very beginning .
+In the case of ϕ4 theory , the field strength is first redefined : where ϕ is the bare field , ϕr is the renormalized field , and Z is a constant to be determined .
+The Lagrangian density becomes : where mr and λr are the experimentally measurable , renormalized , mass and coupling constant , respectively , and are constants to be determined .
+As the Lagrangian now contains more terms , so the Feynman diagrams should include additional elements , each with their own Feynman rules .
+First select a regularization schemesuch as the cut-off regularization introduced above or dimensional regularization ; call the regulator Λ .
+Compute Feynman diagrams , in which divergent terms will depend on Λ .
+Then , define δZ , δm , and δλ such that Feynman diagrams for the counterterms will exactly cancel the divergent terms in the normal Feynman diagrams when the limit Λ → ∞ is taken .
+In this way , meaningful finite quantities are obtained .
+–326 It is only possible to eliminate all infinities to obtain a finite result in renormalizable theories , whereas in non-renormalizable theories infinities cannot be removed by the redefinition of a small number of parameters .
+The Standard Model of elementary particles is a renormalizable QFT , 719–727 while quantum gravity is non-renormalizable .
+The renormalization group , developed by Kenneth Wilson , is a mathematical apparatus used to study the changes in physical parameterscoefficients in the Lagrangian as the system is viewed at different scales .
+The way in which each parameter changes with scale is described by its β function .
+Correlation functions , which underlie quantitative physical predictions , change with scale according to the Callan–Symanzik equation .
+–411 As an example , the coupling constant in QED , namely the elementary charge e , has the following β function : where Λ is the energy scale under which the measurement of e is performed .
+This differential equation implies that the observed elementary charge increases as the scale increases .
+The renormalized coupling constant , which changes with the energy scale , is also called the running coupling constant .
+The coupling constant g in quantum chromodynamics , a non-Abelian gauge theory based on the symmetry group SU3 , has the following β function : where Nf is the number of quark flavours .
+In the case where Nf ≤ 16the Standard Model has Nf = 6 , the coupling constant g decreases as the energy scale increases .
+Hence , while the strong interaction is strong at low energies , it becomes very weak in high-energy interactions , a phenomenon known as asymptotic freedom .
+Conformal field theoriesCFTs are special QFTs that admit conformal symmetry .
+They are insensitive to changes in the scale , as all their coupling constants have vanishing β function .
+The converse is not true , however — the vanishing of all β functions does not imply conformal symmetry of the theory .
+Examples include string theory and N = 4 supersymmetric Yang–Mills theory .
+The cut-off scale of theories of particle interactions lies far beyond current experiments .
+Even if the theory were very complicated at that scale , as long as its couplings are sufficiently weak , it must be described at low energies by a renormalizable effective field theory .
+–403 The difference between renormalizable and non-renormalizable theories is that the former are insensitive to details at high energies , whereas the latter do depend on them .
+According to this view , non-renormalizable theories are to be seen as low-energy effective theories of a more fundamental theory .
+The failure to remove the cut-off Λ from calculations in such a theory merely indicates that new physical phenomena appear at scales above Λ , where a new theory is necessary .
+The quantization and renormalization procedures outlined in the preceding sections are performed for the free theory and ϕ4 theory of the real scalar field .
+A similar process can be done for other types of fields , including the complex scalar field , the vector field , and the Dirac field , as well as other types of interaction terms , including the electromagnetic interaction and the Yukawa interaction .
+As an example , quantum electrodynamics contains a Dirac field ψ representing the electron field and a vector field Aμ representing the electromagnetic fieldphoton field .
+The full QED Lagrangian density is : where γμ are Dirac matrices , ψ ¯ = ψ † γ 0 {\displaystyle {\bar {\psi }}=\psi ^{\dagger }\gamma ^{0}} , and F μ ν = ∂ μ A ν − ∂ ν A μ {\displaystyle F{\mu \nu }=\partial {\mu }A{\nu }-\partial {\nu }A{\mu }} is the electromagnetic field strength .
+The parameters in this theory are thebare electron mass m and thebare elementary charge e .
+The first and second terms in the Lagrangian density correspond to the free Dirac field and free vector fields , respectively .
+The last term describes the interaction between the electron and photon fields , which is treated as a perturbation from the free theories .
+Shown above is an example of a tree-level Feynman diagram in QED .
+It describes an electron and a positron annihilating , creating an off-shell photon , and then decaying into a new pair of electron and positron .
+Arrows pointing forward in time represent the propagation of electrons , while those pointing backward in time represent the propagation of positrons .
+A wavy line represents the propagation of a photon .
+Each vertex in QED Feynman diagrams must have an incoming and an outgoing fermionpositron/electron leg as well as a photon leg .
+If the following transformation to the fields is performed at every spacetime point xa local transformation , then the QED Lagrangian remains unchanged , or invariant : where αx is any function of spacetime coordinates .
+If a theory's Lagrangianor more precisely the action is invariant under a certain local transformation , then the transformation is referred to as a gauge symmetry of the theory .
+–483 Gauge symmetries form a group at every spacetime point .
+The photon field Aμ may be referred to as the U1 gauge boson .
+U1 is an Abelian group , meaning that the result is the same regardless of the order in which its elements are applied .
+QFTs can also be built on non-Abelian groups , giving rise to non-Abelian gauge theoriesalso known as Yang–Mills theories .
+Quantum chromodynamics , which describes the strong interaction , is a non-Abelian gauge theory with an SU3 gauge symmetry .
+The QCD Lagrangian density is : 490–491 where Dμ is the gauge covariant derivative : where g is the coupling constant , ta are the eight generators of SU3 in the fundamental representation3×3 matrices , and fabc are the structure constants of SU3 .
+This Lagrangian is invariant under the transformation : where Ux is an element of SU3 at every spacetime point x : The preceding discussion of symmetries is on the level of the Lagrangian .
+After quantization , some theories will no longer exhibit their classical symmetries , a phenomenon called anomaly .
+For instance , in the path integral formulation , despite the invariance of the Lagrangian density L ϕ , ∂ μ ϕ {\displaystyle {\mathcal {L}}\phi , \partial {\mu }\phi } under a certain local transformation of the fields , the measure ∫ D ϕ {\textstyle \int {\mathcal {D}}\phi } of the path integral may change .
+For a theory describing nature to be consistent , it must not contain any anomaly in its gauge symmetry .
+The Standard Model of elementary particles is a gauge theory based on the group SU3 × SU2 × U1 , in which all anomalies exactly cancel .
+–707 The theoretical foundation of general relativity , the equivalence principle , can also be understood as a form of gauge symmetry , making general relativity a gauge theory based on the Lorentz group .
+–18 : For example , the U1 symmetry of QED implies charge conservation .
+Rather , it relates two equivalent mathematical descriptions of the same quantum state .
+As an example , the photon field Aμ , being a four-vector , has four apparent degrees of freedom , but the actual state of a photon is described by its two degrees of freedom corresponding to the polarization .
+To account for the gauge redundancy in the path integral formulation , one must perform the so-called Faddeev–Popov gauge fixing procedure .
+Particles corresponding to the ghost fields are called ghost particles , which cannot be detected externally .
+–515 A more rigorous generalization of the Faddeev–Popov procedure is given by BRST quantization .
+Spontaneous symmetry breaking is a mechanism whereby the symmetry of the Lagrangian is violated by the system described by it .
+To illustrate the mechanism , consider a linear sigma model containing N real scalar fields , described by the Lagrangian density : where μ and λ are real parameters .
+The theory admits an ON global symmetry : The lowest energy stateground state or vacuum state of the classical theory is any uniform field ϕ0 satisfying Without loss of generality , let the ground state be in the N-th direction : The original N fields can be rewritten as : and the original Lagrangian density as : where k = 1 .
+The original ON global symmetry is no longer manifest , leaving only the subgroup ON − 1 .
+–350 Goldstone's theorem states that under spontaneous symmetry breaking , every broken continuous global symmetry leads to a massless field called the Goldstone boson .
+In the above example , ON has NN − 1/2 continuous symmetriesthe dimension of its Lie algebra , while ON − 1 hasN − 1N − 2/2 .
+The number of broken symmetries is their difference , N − 1 , which corresponds to the N − 1 massless fields πk .
+The Goldstone boson equivalence theorem states that at high energy , the amplitude for emission or absorption of a longitudinally polarized massive gauge boson becomes equal to the amplitude for emission or absorption of the Goldstone boson that was eaten by the gauge boson .
+–744 In the QFT of ferromagnetism , spontaneous symmetry breaking can explain the alignment of magnetic dipoles at low temperatures .
+In the Standard Model of elementary particles , the W and Z bosons , which would otherwise be massless as a result of gauge symmetry , acquire mass through spontaneous symmetry breaking of the Higgs boson , a process called the Higgs mechanism .
+All experimentally known symmetries in nature relate bosons to bosons and fermions to fermions .
+Theorists have hypothesized the existence of a type of symmetry , called supersymmetry , that relates bosons and fermions .
+The Standard Model obeys Poincaré symmetry , whose generators are the spacetime translations Pμ and the Lorentz transformations Jμν .
+–60 In addition to these generators , supersymmetry in3+1-dimensions includes additional generators Qα , called supercharges , which themselves transform as Weyl fermions .
+The symmetry group generated by all these generators is known as the super-Poincaré group .
+In general there can be more than one set of supersymmetry generators , QαI , I = 1 .
+N , which generate the corresponding N = 1 supersymmetry , N = 2 supersymmetry , and so on .
+Supersymmetry can also be constructed in other dimensions , most notably in1+1 dimensions for its application in superstring theory .
+The Lagrangian of a supersymmetric theory must be invariant under the action of the super-Poincaré group .
+Examples of such theories include : Minimal Supersymmetric Standard ModelMSSM , N = 4 supersymmetric Yang–Mills theory , and superstring theory .
+In a supersymmetric theory , every fermion has a bosonic superpartner and vice versa .
+If supersymmetry is promoted to a local symmetry , then the resultant gauge theory is an extension of general relativity called supergravity .
+Supersymmetry is a potential solution to many current problems in physics .
+For example , the hierarchy problem of the Standard Model—why the mass of the Higgs boson is not radiatively correctedunder renormalization to a very high scale such as the grand unified scale or the Planck scale—can be resolved by relating the Higgs field and its super-partner , the Higgsino .
+Radiative corrections due to Higgs boson loops in Feynman diagrams are cancelled by corresponding Higgsino loops .
+Supersymmetry also offers answers to the grand unification of all gauge coupling constants in the Standard Model as well as the nature of dark matter .
+–797 Nevertheless , experiments have yet to provide evidence for the existence of supersymmetric particles .
+If supersymmetry were a true symmetry of nature , then it must be a broken symmetry , and the energy of symmetry breaking must be higher than those achievable by present-day experiments .
+The ϕ4 theory , QED , QCD , as well as the whole Standard Model all assume a3+1-dimensional Minkowski space3 spatial and 1 time dimensions as the background on which the quantum fields are defined .
+However , QFT a priori imposes no restriction on the number of dimensions nor the geometry of spacetime .
+In condensed matter physics , QFT is used to describe2+1-dimensional electron gases .
+In high-energy physics , string theory is a type of1+1-dimensional QFT , while Kaluza–Klein theory uses gravity in extra dimensions to produce gauge theories in lower dimensions .
+–429 In Minkowski space , the flat metric ημν is used to raise and lower spacetime indices in the Lagrangian , for example where ημν is the inverse of ημν satisfying ημρηρν = δμν .
+For QFTs in curved spacetime on the other hand , a general metricsuch as the Schwarzschild metric describing a black hole is used : where gμν is the inverse of gμν .
+For a real scalar field , the Lagrangian density in a general spacetime background is where g = detgμν , and ∇μ denotes the covariant derivative .
+The Lagrangian of a QFT , hence its calculational results and physical predictions , depends on the geometry of the spacetime background .
+The correlation functions and physical predictions of a QFT depend on the spacetime metric gμν .
+For a special class of QFTs called topological quantum field theoriesTQFTs , all correlation functions are independent of continuous changes in the spacetime metric .
+QFTs in curved spacetime generally change according to the geometrylocal structure of the spacetime background , while TQFTs are invariant under spacetime diffeomorphisms but are sensitive to the topologyglobal structure of spacetime .
+This means that all calculational results of TQFTs are topological invariants of the underlying spacetime .
+Chern–Simons theory is an example of TQFT and has been used to construct models of quantum gravity .
+Applications of TQFT include the fractional quantum Hall effect and topological quantum computers .
+–5 The world line trajectory of fractionalized particlesknown as anyons can form a link configuration in the spacetime , which relates the braiding statistics of anyons in physics to the link invariants in mathematics .
+Topological quantum field theoriesTQFTs applicable to the frontier research of topological quantum matters include Chern-Simons-Witten gauge theories in 2+1 spacetime dimensions , other new exotic TQFTs in 3+1 spacetime dimensions and beyond .
+Using perturbation theory , the total effect of a small interaction term can be approximated order by order by a series expansion in the number of virtual particles participating in the interaction .
+Every term in the expansion may be understood as one possible way forphysical particles to interact with each other via virtual particles , expressed visually using a Feynman diagram .
+The electromagnetic force between two electrons in QED is representedto first order in perturbation theory by the propagation of a virtual photon .
+In a similar manner , the W and Z bosons carry the weak interaction , while gluons carry the strong interaction .
+The interpretation of an interaction as a sum of intermediate states involving the exchange of various virtual particles only makes sense in the framework of perturbation theory .
+In contrast , non-perturbative methods in QFT treat the interacting Lagrangian as a whole without any series expansion .
+Instead of particles that carry interactions , these methods have spawned such concepts as 't Hooft–Polyakov monopole , domain wall , flux tube , and instanton .
+Examples of QFTs that are completely solvable non-perturbatively include minimal models of conformal field theory and the Thirring model .
+In spite of its overwhelming success in particle physics and condensed matter physics , QFT itself lacks a formal mathematical foundation .
+For example , according to Haag's theorem , there does not exist a well-defined interaction picture for QFT , which implies that perturbation theory of QFT , which underlies the entire Feynman diagram method , is fundamentally ill-defined .
+However , perturbative quantum field theory , which only requires that quantities be computable as a formal power series without any convergence requirements , can be given a rigorous mathematical treatment .
+In particular , Kevin Costello's monograph Renormalization and Effective Field Theory provides a rigorous formulation of perturbative renormalization that combines both the effective-field theory approaches of Kadanoff , Wilson , and Polchinski , together with the Batalin-Vilkovisky approach to quantizing gauge theories .
+Furthermore , perturbative path-integral methods , typically understood as formal computational methods inspired from finite-dimensional integration theory , can be given a sound mathematical interpretation from their finite-dimensional analogues .
+Since the 1950s , theoretical physicists and mathematicians have attempted to organize all QFTs into a set of axioms , in order to establish the existence of concrete models of relativistic QFT in a mathematically rigorous way and to study their properties .
+This line of study is called constructive quantum field theory , a subfield of mathematical physics , which has led to such results as CPT theorem , spin–statistics theorem , and Goldstone's theorem , and also to mathematically rigorous constructions of many interacting QFTs in two and three spacetime dimensions , for example two-dimensional scalar field theories with arbitrary polynomial interactions , the three-dimensional scalar field theories with a quartic interaction , and so forth Compared to ordinary QFT , topological quantum field theory and conformal field theory are better supported mathematically — both can be classified in the framework of representations of cobordisms .
+Algebraic quantum field theory is another approach to the axiomatization of QFT , in which the fundamental objects are local operators and the algebraic relations between them .
+Axiomatic systems following this approach include Wightman axioms and Haag–Kastler axioms .
+–3 One way to construct theories satisfying Wightman axioms is to use Osterwalder–Schrader axioms , which give the necessary and sufficient conditions for a real time theory to be obtained from an imaginary time theory by analytic continuationWick rotation .
+Yang–Mills existence and mass gap , one of the Millennium Prize Problems , concerns the well-defined existence of Yang–Mills theories as set out by the above axioms .
+Prove that for any compact simple gauge group G , a non-trivial quantum Yang–Mills theory exists on R 4 {\displaystyle \mathbb {R} ^{4}} and has a mass gap Δ > 0 .
+Existence includes establishing axiomatic properties at least as strong as those cited in Streater & Wightman1964 , Osterwalder & Schrader1973 and Osterwalder & Schrader1975 .
+Philosophy of mind is a branch of philosophy that deals with the nature of the mind and its relation to the body and the external world .
+The mind–body problem is a paradigmatic issue in philosophy of mind , although a number of other issues are addressed , such as the hard problem of consciousness and the nature of particular mental states .
+Aspects of the mind that are studied include mental events , mental functions , mental properties , consciousness and its neural correlates , the ontology of the mind , the nature of cognition and of thought , and the relationship of the mind to the body .
+Dualism and monism are the two central schools of thought on the mind–body problem , although nuanced views have arisen that do not fit one or the other category neatly .
+Most modern philosophers of mind adopt either a reductive physicalist or non-reductive physicalist position , maintaining in their different ways that the mind is not something separate from the body .
+These approaches have been particularly influential in the sciences , especially in the fields of sociobiology , computer sciencespecifically , artificial intelligence , evolutionary psychology and the various neurosciences .
+Reductive physicalists assert that all mental states and properties will eventually be explained by scientific accounts of physiological processes and states .
+Non-reductive physicalists argue that although the mind is not a separate substance , mental properties supervene on physical properties , or that the predicates and vocabulary used in mental descriptions and explanations are indispensable , and cannot be reduced to the language and lower-level explanations of physical science .
+Continued neuroscientific progress has helped to clarify some of these issues ; however , they are far from being resolved .
+Modern philosophers of mind continue to ask how the subjective qualities and the intentionality of mental states and properties can be explained in naturalistic terms .
+The problems of physicalist theories of the mind have led some contemporary philosophers to assert that the traditional view of substance dualism should be defended .
+The mind–body problem concerns the explanation of the relationship that exists between minds , or mental processes , and bodily states or processes .
+The main aim of philosophers working in this area is to determine the nature of the mind and mental states/processes , and how—or even if—minds are affected by and can affect the body .
+Perceptual experiences depend on stimuli that arrive at our various sensory organs from the external world , and these stimuli cause changes in our mental states , ultimately causing us to feel a sensation , which may be pleasant or unpleasant .
+For example , someone's desire for a slice of pizza will tend to cause that person to move his or her body in a specific manner and direction to obtain what he or she wants .
+The question , then , is how it can be possible for conscious experiences to arise out of a lump of gray matter endowed with nothing but electrochemical properties .
+A related problem is how someone's propositional attitudesfor example beliefs and desires cause that individual's neurons to fire and muscles to contract .
+These comprise some of the puzzles that have confronted epistemologists and philosophers of mind from the time of René Descartes .
+Dualism is a set of views about the relationship between mind and matteror body .
+It begins with the claim that mental phenomena are , in some respects , non-physical .
+Mind and bodyIndriya are different functions of prakriti and so a form of property dualism may be found in the ancient Indian philosophical schools of Samkhya and Yogaca .
+Yet both mind and body are equally non-consciousjaDaa in Samkhya and , while they are different developments of prakriti , they are both made up of gunas .
+In Western philosophy , the earliest discussions of dualist ideas are in the writings of Plato who suggested that humans' intelligencea faculty of the mind or soul could not be identified with , or explained in terms of , their physical body .
+Descartes was the first to clearly identify the mind with consciousness and self-awareness , and to distinguish this from the brain , which was the seat of intelligence .
+He was therefore the first to formulate the mind–body problem in the form in which it still exists today .
+The most frequently used argument in favor of dualism appeals to the common-sense intuition that conscious experience is distinct from inanimate matter .
+If asked what the mind is , the average person would usually respond by identifying it with their self , their personality , their soul , or another related entity .
+They would almost certainly deny that the mind simply is the brain , or vice versa , finding the idea that there is just one ontological entity at play to be too mechanistic or unintelligible .
+Modern philosophers of mind think that these intuitions are misleading , and that critical faculties , along with empirical evidence from the sciences , should be used to examine these assumptions and determine whether there is any real basis to them .
+Mental events have a subjective quality , whereas physical events do not .
+So , for example , one can reasonably ask what a burnt finger feels like , or what a blue sky looks like , or what nice music sounds like to a person .
+But it is meaningless , or at least odd , to ask what a surge in the uptake of glutamate in the dorsolateral portion of the prefrontal cortex feels like .
+There are qualia involved in these mental events that seem particularly difficult to reduce to anything physical .
+David Chalmers explains this argument by stating that we could conceivably know all the objective information about something , such as the brain states and wavelengths of light involved with seeing the color red , but still not know something fundamental about the situation – what it is like to see the color red .
+If consciousnessthe mind can exist independently of physical realitythe brain , one must explain how physical memories are created concerning consciousness .
+Dualism must therefore explain how consciousness affects physical reality .
+One possible explanation is that of a miracle , proposed by Arnold Geulincx and Nicolas Malebranche , where all mind–body interactions require the direct intervention of God .
+Lewis is the Argument from Reason : if , as monism implies , all of our thoughts are the effects of physical causes , then we have no reason for assuming that they are also the consequent of a reasonable ground .
+Knowledge , however , is apprehended by reasoning from ground to consequent .
+Therefore , if monism is correct , there would be no way of knowing this—or anything else—we could not even suppose it , except by a fluke .
+The zombie argument is based on a thought experiment proposed by Todd Moody , and developed by David Chalmers in his book The Conscious Mind .
+The basic idea is that one can imagine one's body , and therefore conceive the existence of one's body , without any conscious states being associated with this body .
+Chalmers' argument is that it seems possible that such a being could exist because all that is needed is that all and only the things that the physical sciences describe about a zombie must be true of it .
+Since none of the concepts involved in these sciences make reference to consciousness or other mental phenomena , and any physical entity can be by definition described scientifically via physics , the move from conceivability to possibility is not such a large one .
+Others such as Dennett have argued that the notion of a philosophical zombie is an incoherent , or unlikely , concept .
+It has been argued under physicalism that one must either believe that anyone including oneself might be a zombie , or that no one can be a zombie—following from the assertion that one's own conviction about beingor not being a zombie is a product of the physical world and is therefore no different from anyone else's .
+One argument Elitzur makes in favor of dualism is an argument from bafflement .
+According to Elitzur , a conscious being can conceive of a P-zombie version of his/herself .
+However , a P-zombie cannot conceive of a version of itself that lacks corresponding qualia .
+Christian List argues that the existence of first-person perspectives is evidence against physicalist views of consciousness .
+According to List , first-personal phenomenal facts cannot supervene on third-person physical facts .
+However , List argues that this also refutes versions of dualism that have purely third-personal metaphysics .
+Interactionist dualism , or simply interactionism , is the particular form of dualism first espoused by Descartes in the Meditations .
+In the 20th century , its major defenders have been Karl Popper and John Carew Eccles .
+It is the view that mental states , such as beliefs and desires , causally interact with physical states .
+Descartes's argument for this position can be summarized as follows : Seth has a clear and distinct idea of his mind as a thinking thing that has no spatial extensioni e .
+He also has a clear and distinct idea of his body as something that is spatially extended , subject to quantification and not able to think .
+It follows that mind and body are not identical because they have radically different properties .
+Seth's mental statesdesires , beliefs , and so forth have causal effects on his body and vice versa : A child touches a hot stovephysical event which causes painmental event and makes her yellphysical event , this in turn provokes a sense of fear and protectiveness in the caregivermental event , and so on .
+For example , Joseph Agassi suggests that several scientific discoveries made since the early 20th century have undermined the idea of privileged access to one's own ideas .
+Freud claimed that a psychologically-trained observer can understand a person's unconscious motivations better than the person himself does .
+Duhem has shown that a philosopher of science can know a person's methods of discovery better than that person herself does , while Malinowski has shown that an anthropologist can know a person's customs and habits better than the person whose customs and habits they are .
+He also asserts that modern psychological experiments that cause people to see things that are not there provide grounds for rejecting Descartes' argument , because scientists can describe a person's perceptions better than the person themself can .
+Psychophysical parallelism , or simply parallelism , is the view that mind and body , while having distinct ontological statuses , do not causally influence one another .
+Instead , they run along parallel pathsmind events causally interact with mind events and brain events causally interact with brain events and only seem to influence each other .
+This view was most prominently defended by Gottfried Leibniz .
+He held that God had arranged things in advance so that minds and bodies would be in harmony with each other .
+This is known as the doctrine of pre-established harmony .
+Occasionalism is the view espoused by Nicholas Malebranche as well as Islamic philosophers such as Abu Hamid Muhammad ibn Muhammad al-Ghazali that asserts all supposedly causal relations between physical events , or between physical and mental events , are not really causal at all .
+While body and mind are different substances , causeswhether mental or physical are related to their effects by an act of God's intervention on each specific occasion .
+Property dualism is the view that the world is constituted of one kind of substance – the physical kind – and there exist two distinct kinds of properties : physical properties and mental properties .
+It is the view that non-physical , mental propertiessuch as beliefs , desires and emotions inhere in some physical bodiesat least , brains .
+Sub-varieties of property dualism include : Dual aspect theory or dual-aspect monism is the view that the mental and the physical are two aspects of , or perspectives on , the same substance .
+Thus it is a mixed position , which is monistic in some respects .
+In modern philosophical writings , the theory's relationship to neutral monism has become somewhat ill-defined , but one proffered distinction says that whereas neutral monism allows the context of a given group of neutral elements and the relationships into which they enter to determine whether the group can be thought of as mental , physical , both , or neither , dual-aspect theory suggests that the mental and the physical are manifestationsor aspects of some underlying substance , entity or process that is itself neither mental nor physical as normally understood .
+Various formulations of dual-aspect monism also require the mental and the physical to be complementary , mutually irreducible and perhaps inseparablethough distinct .
+This is a philosophy of mind that regards the degrees of freedom between mental and physical well-being as not synonymous thus implying an experiential dualism between body and mind .
+Experiential dualism notes that our subjective experience of merely seeing something in the physical world seems qualitatively different from mental processes like grief that comes from losing a loved one .
+This philosophy is a proponent of causal dualism , which is defined as the dual ability for mental states and physical states to affect one another .
+Mental states can cause changes in physical states and vice versa .
+However , unlike cartesian dualism or some other systems , experiential dualism does not posit two fundamental substances in reality : mind and matter .
+Rather , experiential dualism is to be understood as a conceptual framework that gives credence to the qualitative difference between the experience of mental and physical states .
+Experiential dualism is accepted as the conceptual framework of Madhyamaka Buddhism .
+Madhayamaka Buddhism goes further , finding fault with the monist view of physicalist philosophies of mind as well in that these generally posit matter and energy as the fundamental substance of reality .
+Nonetheless , this does not imply that the cartesian dualist view is correct , rather Madhyamaka regards as error any affirming view of a fundamental substance to reality .
+In denying the independent self-existence of all the phenomena that make up the world of our experience , the Madhyamaka view departs from both the substance dualism of Descartes and the substance monism—namely , physicalism—that is characteristic of modern science .
+The physicalism propounded by many contemporary scientists seems to assert that the real world is composed of physical things-in-themselves , while all mental phenomena are regarded as mere appearances , devoid of any reality in and of themselves .
+Much is made of this difference between appearances and reality .
+Indeed , physicalism , or the idea that matter is the only fundamental substance of reality , is explicitly rejected by Buddhism .
+In the Madhyamaka view , mental events are no more or less real than physical events .
+In terms of our common-sense experience , differences of kind do exist between physical and mental phenomena .
+While the former commonly have mass , location , velocity , shape , size , and numerous other physical attributes , these are not generally characteristic of mental phenomena .
+For example , we do not commonly conceive of the feeling of affection for another person as having mass or location .
+These physical attributes are no more appropriate to other mental events such as sadness , a recalled image from one's childhood , the visual perception of a rose , or consciousness of any sort .
+Mental phenomena are , therefore , not regarded as being physical , for the simple reason that they lack many of the attributes that are uniquely characteristic of physical phenomena .
+Thus , Buddhism has never adopted the physicalist principle that regards only physical things as real .
+In contrast to dualism , monism does not accept any fundamental divisions .
+The fundamentally disparate nature of reality has been central to forms of eastern philosophies for over two millennia .
+In Indian and Chinese philosophy , monism is integral to how experience is understood .
+Today , the most common forms of monism in Western philosophy are physicalist .
+Physicalistic monism asserts that the only existing substance is physical , in some sense of that term to be clarified by our best science .
+However , a variety of formulationssee below are possible .
+Another form of monism , idealism , states that the only existing substance is mental .
+Although pure idealism , such as that of George Berkeley , is uncommon in contemporary Western philosophy , a more sophisticated variant called panpsychism , according to which mental experience and properties may be at the foundation of physical experience and properties , has been espoused by some philosophers such as Alfred North Whitehead and David Ray Griffin .
+Phenomenalism is the theory that representationsor sense data of external objects are all that exist .
+Such a view was briefly adopted by Bertrand Russell and many of the logical positivists during the early 20th century .
+A third possibility is to accept the existence of a basic substance that is neither physical nor mental .
+The mental and physical would then both be properties of this neutral substance .
+Such a position was adopted by Baruch Spinoza and was popularized by Ernst Mach in the 19th century .
+This neutral monism , as it is called , resembles property dualism .
+Behaviorism dominated philosophy of mind for much of the 20th century , especially the first half .
+In psychology , behaviorism developed as a reaction to the inadequacies of introspectionism .
+Introspective reports on one's own interior mental life are not subject to careful examination for accuracy and cannot be used to form predictive generalizations .
+Without generalizability and the possibility of third-person examination , the behaviorists argued , psychology cannot be scientific .
+The way out , therefore , was to eliminate the idea of an interior mental lifeand hence an ontologically independent mind altogether and focus instead on the description of observable behavior .
+Parallel to these developments in psychology , a philosophical behaviorismsometimes called logical behaviorism was developed .
+This is characterized by a strong verificationism , which generally considers unverifiable statements about interior mental life pointless .
+For the behaviorist , mental states are not interior states on which one can make introspective reports .
+They are just descriptions of behavior or dispositions to behave in certain ways , made by third parties to explain and predict another's behavior .
+Philosophical behaviorism has fallen out of favor since the latter half of the 20th century , coinciding with the rise of cognitivism .
+Type physicalismor type-identity theory was developed by Jack Smart and Ullin Place as a direct reaction to the failure of behaviorism .
+These philosophers reasoned that , if mental states are something material , but not behavioral , then mental states are probably identical to internal states of the brain .
+In very simplified terms : a mental state M is nothing other than brain state B .
+On the other hand , even granted the above , it does not follow that identity theories of all types must be abandoned .
+According to token identity theories , the fact that a certain brain state is connected with only one mental state of a person does not have to mean that there is an absolute correlation between types of mental state and types of brain state .
+The idea of token identity is that only particular occurrences of mental events are identical with particular occurrences or tokenings of physical events .
+Anomalous monismsee below and most other non-reductive physicalisms are token-identity theories .
+Despite these problems , there is a renewed interest in the type identity theory today , primarily due to the influence of Jaegwon Kim .
+Functionalism was formulated by Hilary Putnam and Jerry Fodor as a reaction to the inadequacies of the identity theory .
+Putnam and Fodor saw mental states in terms of an empirical computational theory of the mind .
+At about the same time or slightly after , D .
+Armstrong and David Kellogg Lewis formulated a version of functionalism that analyzed the mental concepts of folk psychology in terms of functional roles .
+Finally , Wittgenstein's idea of meaning as use led to a version of functionalism as a theory of meaning , further developed by Wilfrid Sellars and Gilbert Harman .
+Another one , psychofunctionalism , is an approach adopted by the naturalistic philosophy of mind associated with Jerry Fodor and Zenon Pylyshyn .
+Mental states are characterized by their causal relations with other mental states and with sensory inputs and behavioral outputs .
+Functionalism abstracts away from the details of the physical implementation of a mental state by characterizing it in terms of non-mental functional properties .
+For example , a kidney is characterized scientifically by its functional role in filtering blood and maintaining certain chemical balances .
+Non-reductionist philosophers hold firmly to two essential convictions with regard to mind–body relations : 1 Physicalism is true and mental states must be physical states , but 2 All reductionist proposals are unsatisfactory : mental states cannot be reduced to behavior , brain states or functional states .
+Hence , the question arises whether there can still be a non-reductive physicalism .
+Donald Davidson's anomalous monism is an attempt to formulate such a physicalism .
+This is analogous to physical properties of the brain giving rise to a mental state .
+Emergentists try to solve the notorious mind–body gap this way .
+One problem for emergentism is the idea of causal closure in the world that does not allow for a mind-to-body causation .
+If one is a materialist and believes that all aspects of our common-sense psychology will find reduction to a mature cognitive neuroscience , and that non-reductive materialism is mistaken , then one can adopt a final , more radical position : eliminative materialism .
+Eliminativists such as Patricia and Paul Churchland argue that while folk psychology treats cognition as fundamentally sentence-like , the non-linguistic vector/matrix model of neural network theory or connectionism will prove to be a much more accurate account of how the brain works .
+The Churchlands often invoke the fate of other , erroneous popular theories and ontologies that have arisen in the course of history .
+For example , Ptolemaic astronomy served to explain and roughly predict the motions of the planets for centuries , but eventually this model of the Solar System was eliminated in favor of the Copernican model .
+Colin McGinn holds that human beings are cognitively closed in regards to their own minds .
+According to McGinn human minds lack the concept-forming procedures to fully grasp how mental properties such as consciousness arise from their causal basis .
+An example would be how an elephant is cognitively closed in regards to particle physics .
+A more moderate conception has been expounded by Thomas Nagel , which holds that the mind–body problem is currently unsolvable at the present stage of scientific development and that it might take a future scientific paradigm shift or revolution to bridge the explanatory gap .
+Each attempt to answer the mind–body problem encounters substantial problems .
+Some philosophers argue that this is because there is an underlying conceptual confusion .
+These philosophers , such as Ludwig Wittgenstein and his followers in the tradition of linguistic criticism , therefore reject the problem as illusory .
+They argue that it is an error to ask how mental and biological states fit together .
+Rather it should simply be accepted that human experience can be described in different ways—for instance , in a mental and in a biological vocabulary .
+Illusory problems arise if one tries to describe the one in terms of the other's vocabulary or if the mental vocabulary is used in the wrong contexts .
+This is the case , for instance , if one searches for mental states of the brain .
+The brain is simply the wrong context for the use of mental vocabulary—the search for mental states of the brain is therefore a category error or a sort of fallacy of reasoning .
+Today , such a position is often adopted by interpreters of Wittgenstein such as Peter Hacker .
+However , Hilary Putnam , the originator of functionalism , has also adopted the position that the mind–body problem is an illusory problem which should be dissolved according to the manner of Wittgenstein .
+The thesis of physicalism is that the mind is part of the materialor physical world .
+Such a position faces the problem that the mind has certain properties that no other material thing seems to possess .
+Physicalism must therefore explain how it is possible that these properties can nonetheless emerge from a material thing .
+Some of the crucial problems that this project attempts to resolve include the existence of qualia and the nature of intentionality .
+Many mental states seem to be experienced subjectively in different ways by different individuals .
+And it is characteristic of a mental state that it has some experiential quality , for example of pain , that it hurts .
+However , the sensation of pain between two individuals may not be identical , since no one has a perfect way to measure how much something hurts or of describing exactly how it feels to hurt .
+Philosophers and scientists therefore ask where these experiences come from .
+The existence of cerebral events , in and of themselves , cannot explain why they are accompanied by these corresponding qualitative experiences .
+The puzzle of why many cerebral processes occur with an accompanying experiential aspect in consciousness seems impossible to explain .
+Yet it also seems to many that science will eventually have to explain such experiences .
+This follows from an assumption about the possibility of reductive explanations .
+According to this view , if an attempt can be successfully made to explain a phenomenon reductivelyfor example water , then it can be explained why the phenomenon has all of its propertiesfor example fluidity , transparency .
+In the case of mental states , this means that there needs to be an explanation of why they have the property of being experienced in a certain way .
+The 20th-century German philosopher Martin Heidegger criticized the ontological assumptions underpinning such a reductive model , and claimed that it was impossible to make sense of experience in these terms .
+Another way to put this is that the very concept of qualitative experience is incoherent in terms of—or is semantically incommensurable with the concept of—substances that bear properties .
+This problem of explaining introspective first-person aspects of mental states and consciousness in general in terms of third-person quantitative neuroscience is called the explanatory gap .
+There are several different views of the nature of this gap among contemporary philosophers of mind .
+David Chalmers and the early Frank Jackson interpret the gap as ontological in nature ; that is , they maintain that qualia can never be explained by science because physicalism is false .
+There are two separate categories involved and one cannot be reduced to the other .
+An alternative view is taken by philosophers such as Thomas Nagel and Colin McGinn .
+According to them , the gap is epistemological in nature .
+For Nagel , science is not yet able to explain subjective experience because it has not yet arrived at the level or kind of knowledge that is required .
+We are not even able to formulate the problem coherently .
+For McGinn , on other hand , the problem is one of permanent and inherent biological limitations .
+We are not able to resolve the explanatory gap because the realm of subjective experiences is cognitively closed to us in the same manner that quantum physics is cognitively closed to elephants .
+Other philosophers liquidate the gap as purely a semantic problem .
+Intentionality is the capacity of mental states to be directed towardsabout or be in relation with something in the external world .
+This property of mental states entails that they have contents and semantic referents and can therefore be assigned truth values .
+When one tries to reduce these states to natural processes there arises a problem : natural processes are not true or false , they simply happen .
+It would not make any sense to say that a natural process is true or false .
+But mental ideas or judgments are true or false , so how then can mental statesideas or judgments be natural processes ?
+The possibility of assigning semantic value to ideas must mean that such ideas are about facts .
+Thus , for example , the idea that Herodotus was a historian refers to Herodotus and to the fact that he was a historian .
+If the fact is true , then the idea is true ; otherwise , it is false .
+In the brain , there are only electrochemical processes and these seem not to have anything to do with Herodotus .
+Philosophy of perception is concerned with the nature of perceptual experience and the status of perceptual objects , in particular how perceptual experience relates to appearances and beliefs about the world .
+The main contemporary views within philosophy of perception include naive realism , enactivism and representational views .
+Humans are corporeal beings and , as such , they are subject to examination and description by the natural sciences .
+Since mental processes are intimately related to bodily processesfor example embodied cognition theory of mind , the descriptions that the natural sciences furnish of human beings play an important role in the philosophy of mind .
+There are many scientific disciplines that study processes related to the mental .
+The list of such sciences includes : biology , computer science , cognitive science , cybernetics , linguistics , medicine , pharmacology , and psychology .
+The theoretical background of biology , as is the case with modern natural sciences in general , is fundamentally materialistic .
+The objects of study are , in the first place , physical processes , which are considered to be the foundations of mental activity and behavior .
+Cognitive neuroscience studies the correlations between mental processes and neural processes .
+Neuropsychology describes the dependence of mental faculties on specific anatomical regions of the brain .
+Lastly , evolutionary biology studies the origins and development of the human nervous system and , in as much as this is the basis of the mind , also describes the ontogenetic and phylogenetic development of mental phenomena beginning from their most primitive stages .
+Evolutionary biology furthermore places tight constraints on any philosophical theory of the mind , as the gene-based mechanism of natural selection does not allow any giant leaps in the development of neural complexity or neural software but only incremental steps over long time periods .
+The methodological breakthroughs of the neurosciences , in particular the introduction of high-tech neuroimaging procedures , has propelled scientists toward the elaboration of increasingly ambitious research programs : one of the main goals is to describe and comprehend the neural processes which correspond to mental functionssee : neural correlate .
+Neurophilosophy is an interdisciplinary field that examines the intersection of neuroscience and philosophy , particularly focusing on how neuroscientific findings inform and challenge traditional arguments in the philosophy of mind , offering insights into the nature of consciousness , cognition , and the mind-brain relationship .
+Patricia Churchland argues for a deep integration of neuroscience and philosophy , emphasizing that understanding the mind requires grounding philosophical questions in empirical findings about the brain .
+Churchland challenges traditional dualistic and purely conceptual approaches to the mind , advocating for a materialistic framework where mental phenomena are understood as brain processes .
+She posits that philosophical theories of mind must be informed by advances in neuroscience , such as the study of neural networks , brain plasticity , and the biochemical basis of cognition and behavior .
+Churchland critiques the idea that introspection or purely conceptual analysis can sufficiently explain consciousness , arguing instead that empirical methods can illuminate how subjective experiences arise from neural mechanisms .
+An unsolved question in neuroscience and the philosophy of mind is the binding problem , which is the problem of how objects , background , and abstract or emotional features are combined into a single experience .
+The binding problem can be subdivided into the four areas of perception , neuroscience , cognitive science , and the philosophy of mind .
+It includes general considerations on coordination , the subjective unity of perception , and variable binding .
+Another related problem is known as the boundary problem .
+The boundary problem is essentially the inverse of the binding problem , and asks how binding stops occurring and what prevents other neurological phenomena from being included in first-person perspectives , giving first-person perspectives hard boundaries .
+Computer science concerns itself with the automatic processing of informationor at least with physical systems of symbols to which information is assigned by means of such things as computers .
+From the beginning , computer programmers have been able to develop programs that permit computers to carry out tasks for which organic beings need a mind .
+It is not clear whether computers could be said to have a mind .
+Could they , someday , come to have what we call a mind ?
+This question has been propelled into the forefront of much philosophical debate because of investigations in the field of artificial intelligenceAI .
+Within AI , it is common to distinguish between a modest research program and a more ambitious one : this distinction was coined by John Searle in terms of a weak AI and strong AI .
+The program of strong AI goes back to one of the pioneers of computation Alan Turing .
+Essentially , Turing's view of machine intelligence followed the behaviourist model of the mind—intelligence is as intelligence does .
+The Turing test has received many criticisms , among which the most famous is probably the Chinese room thought experiment formulated by Searle .
+The question about the possible sensitivityqualia of computers or robots still remains open .
+They suggest that based on the reciprocal influences between software and hardware that takes place in all computers , it is possible that someday theories can be discovered that help us to understand the reciprocal influences between the human mind and the brainwetware .
+Psychology is the science that investigates mental states directly .
+It uses generally empirical methods to investigate concrete mental states like joy , fear or obsessions .
+Psychology investigates the laws that bind these mental states to each other or with inputs and outputs to the human organism .
+An example of this is the psychology of perception .
+Scientists working in this field have discovered general principles of the perception of forms .
+A law of the psychology of forms says that objects that move in the same direction are perceived as related to each other .
+This law describes a relation between visual input and mental perceptual states .
+However , it does not suggest anything about the nature of perceptual states .
+The laws discovered by psychology are compatible with all the answers to the mind–body problem already described .
+Cognitive science is the interdisciplinary scientific study of the mind and its processes .
+It examines what cognition is , what it does , and how it works .
+It includes research on intelligence and behavior , especially focusing on how information is represented , processed , and transformedin faculties such as perception , language , memory , reasoning , and emotion within nervous systemshuman or other animals and machinesfor example computers .
+Cognitive science consists of multiple research disciplines , including psychology , artificial intelligence , philosophy , neuroscience , linguistics , anthropology , sociology , and education .
+It spans many levels of analysis , from low-level learning and decision mechanisms to high-level logic and planning ; from neural circuitry to modular brain organization .
+Over the years , cognitive science has evolved from a representational and information processing approach to explaining the mind to embrace an embodied perspective of it .
+Accordingly , bodily processes play a significant role in the acquisition , development , and shaping of cognitive capabilities .
+For instance , Rowlands2012 argues that cognition is enactive , embodied , embedded , affective andpotentially extended .
+In the field of near-death research , the following phenomenon , among others , occurs : For example , during some brain operations the brain is artificially and measurably deactivated .
+Nevertheless , some patients report during this phase that they have perceived what is happening in their surroundings , that is , that they have had consciousness .
+There is the following problem : As soon as the brain is no longer supplied with blood and thus with oxygen after a cardiac arrest , the brain ceases its normal operation after about 15 seconds , that is , the brain falls into a state of unconsciousness .
+Most of the discussion in this article has focused on one style or tradition of philosophy in modern Western culture , usually called analytic philosophysometimes described as Anglo-American philosophy .
+Many other schools of thought exist , however , which are sometimes subsumed under the broadand vague label of continental philosophy .
+In any case , though topics and methods here are numerous , in relation to the philosophy of mind the various schools that fall under this labelphenomenology , existentialism , and so forth can globally be seen to differ from the analytic school in that they focus less on language and logical analysis alone but also take in other forms of understanding human existence and experience .
+With reference specifically to the discussion of the mind , this tends to translate into attempts to grasp the concepts of thought and perceptual experience in some sense that does not merely involve the analysis of linguistic forms .
+Immanuel Kant's Critique of Pure Reason , first published in 1781 and presented again with major revisions in 1787 , represents a significant intervention into what will later become known as the philosophy of mind .
+Kant's first critique is generally recognized as among the most significant works of modern philosophy in the West .
+Kant is a figure whose influence is marked in both continental and analytic/Anglo-American philosophy .
+Kant's work develops an in-depth study of transcendental consciousness , or the life of the mind as conceived through the universal categories of understanding .
+Nonetheless , Hegel's work differs radically from the style of Anglo-American philosophy of mind .
+In modern times , the two main schools that have developed in response or opposition to this Hegelian tradition are phenomenology and existentialism .
+Phenomenology , founded by Edmund Husserl , focuses on the contents of the human mindsee noema and how processes shape our experiences .
+Existentialism , a school of thought founded upon the work of Søren Kierkegaard , focuses on Human predicament and how people deal with the situation of being alive .
+Existential-phenomenology represents a major branch of continental philosophythey are not contradictory , rooted in the work of Husserl but expressed in its fullest forms in the work of Martin Heidegger , Jean-Paul Sartre , Simone de Beauvoir and Maurice Merleau-Ponty .
+See Heidegger's Being and Time , Merleau-Ponty's Phenomenology of Perception , Sartre's Being and Nothingness , and Simone de Beauvoir's The Second Sex .
+There are countless subjects that are affected by the ideas developed in the philosophy of mind .
+Clear examples of this are the nature of death and its definitive character , the nature of emotion , of perception and of memory .
+Questions about what a person is and what his or her identity have to do with the philosophy of mind .
+There are two subjects that , in connection with the philosophy of the mind , have aroused special attention : free will and the self .
+In the context of philosophy of mind , the problem of free will takes on renewed intensity .
+According to this position , natural laws completely determine the course of the material world .
+Mental states , and therefore the will as well , would be material states , which means human behavior and decisions would be completely determined by natural laws .
+Some take this reasoning a step further : people cannot determine by themselves what they want and what they do .
+This argumentation is rejected , on the one hand , by the compatibilists .
+It is not appropriate to identify freedom with indetermination .
+A free act is one where the agent could have done otherwise if it had chosen otherwise .
+In this sense a person can be free even though determinism is true .
+The most important compatibilist in the history of the philosophy was David Hume .
+On the other hand , there are also many incompatibilists who reject the argument because they believe that the will is free in a stronger sense called libertarianism .
+These philosophers affirm the course of the world is either a not completely determined by natural law where natural law is intercepted by physically independent agency , b determined by indeterministic natural law only , or c determined by indeterministic natural law in line with the subjective effort of physically non-reducible agency .
+Under Libertarianism , the will does not have to be deterministic and , therefore , it is potentially free .
+Critics of the second propositionb accuse the incompatibilists of using an incoherent concept of freedom .
+They argue as follows : if our will is not determined by anything , then we desire what we desire by pure chance .
+And if what we desire is purely accidental , we are not free .
+So if our will is not determined by anything , we are not free .
+According to Dennett and other contemporaries , the self is considered an illusion .
+The idea of a self as an immutable essential nucleus derives from the idea of an immaterial soul .
+However , in the light of empirical results from developmental psychology , developmental biology and neuroscience , the idea of an essential inconstant , material nucleus—an integrated representational system distributed over changing patterns of synaptic connections—seems reasonable .
+One question central to the philosophy of personal identity is Benj Hellie's vertiginous question .
+The vertiginous question asks why , of all the subjects of experience out there , this one—the one corresponding to the human being referred to as Benj Hellie—is the one whose experiences are live ?
+The reader is supposed to substitute their own case for Hellie's .
+In other words : Why am I me and not someone else ?
+However , Hellie argues , through a parable , that this response leaves something out .
+His parable describes two situations , one reflecting a broad global constellation view of the world and everyone's phenomenal features , and one describing an embedded view from the perspective of a single subject .
+Caspar Hare has discussed similar ideas with the concepts of egocentric presentism and perspectival realism .
+In his book I am You : The Metaphysical Foundations for Global Ethics , Daniel Kolak advocates for a philosophy he calls open individualism .
+Open individualism states that individual personal identity is an illusion and all individual conscious minds are in reality the same being , similar to the idea of anattā in Buddhist philosophy .
+Kolak describes three opposing philosophical views of personal identity : closed individualism , empty individualism , and open individualism .
+Closed individualism is considered to be the default view of personal identity , which is that one's personal identity consists of a ray or line traveling through time , and that one has a future self .
+Similar ideas have been discussed by Derek Parfit in the book Reasons and Persons with thought experiments such as the teletransportation paradox .
+Thomas Nagel further discusses the philosophy of self and perspective in the book The View from Nowhere .
+It contrasts passive and active points of view in how humanity interacts with the world , relying either on a subjective perspective that reflects a point of view or an objective perspective that takes a more detached perspective .
+Can constraint and constitution be causal relations for mental causation ?
+Can downward causation between two levels be generalised to other levels ?
+Is self-organization an answer to reductionism – anti-reductionism debate ?
+Is it a paradigm shift from substance and process philosophy ?
+What is meaning of causation in Downward Causation 7 Synchronic and diachronic identity of individual self , problem of identity - Ship of Theseus .
+Is the reductionism – antireductionism debate same as physicalism – nonreductive physicalism .
+How can the higher level of organization which is dependent on the lower level for its existence have any causal impact on the lower ?
+Are special sciences like psychology autonomous in their explanation or reducible to lower levels .
+Why is there a subjective feeling when the brain is processing information ?

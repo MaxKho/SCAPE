@@ -1,0 +1,237 @@
+term,category,category_name
+Rock,1,Direct physical references
+Waterfall,1,Direct physical references
+Fire,1,Direct physical references
+Tree,1,Direct physical references
+Wind,1,Direct physical references
+Mountain,1,Direct physical references
+River delta,1,Direct physical references
+Sand,1,Direct physical references
+Metal,1,Direct physical references
+Smoke,1,Direct physical references
+Cloud,1,Direct physical references
+Thunder,1,Direct physical references
+Snow,1,Direct physical references
+Skin,1,Direct physical references
+Eyeball,1,Direct physical references
+Tongue,1,Direct physical references
+Hand,1,Direct physical references
+Joint,1,Direct physical references
+Femur bone,1,Direct physical references
+Bone marrow,1,Direct physical references
+Pebble,1,Direct physical references
+Grass blade,1,Direct physical references
+Leaf,1,Direct physical references
+Branch,1,Direct physical references
+Flower,1,Direct physical references
+Seedling,1,Direct physical references
+Feather,1,Direct physical references
+Fur,1,Direct physical references
+Snake,1,Direct physical references
+Talon,1,Direct physical references
+Tooth,1,Direct physical references
+Beak,1,Direct physical references
+Shell,1,Direct physical references
+Wave,1,Direct physical references
+Sunlight,1,Direct physical references
+Shadow,1,Direct physical references
+Echo,1,Direct physical references
+Sound,1,Direct physical references
+Scent trail,1,Direct physical references
+Flavor,1,Direct physical references
+Laughter,1,Direct physical references
+Crying,1,Direct physical references
+Sweat,1,Direct physical references
+Blood,1,Direct physical references
+Tear,1,Direct physical references
+Pulse,1,Direct physical references
+Breath,1,Direct physical references
+Whisper,1,Direct physical references
+Sneeze,1,Direct physical references
+Cough,1,Direct physical references
+Yawn,1,Direct physical references
+Blink,1,Direct physical references
+Step,1,Direct physical references
+Jump,1,Direct physical references
+Stride,1,Direct physical references
+Walk,1,Direct physical references
+Kick,1,Direct physical references
+Clap,1,Direct physical references
+Hug,1,Direct physical references
+Smile,1,Direct physical references
+Frown,1,Direct physical references
+Bite,1,Direct physical references
+Chew,1,Direct physical references
+Swallow,1,Direct physical references
+Echo sound,1,Direct physical references
+Laughter sound,1,Direct physical references
+Crying noise,1,Direct physical references
+Sweat drop,1,Direct physical references
+Blood vessel,1,Direct physical references
+Whisper tone,1,Direct physical references
+Sneeze burst,1,Direct physical references
+House,2,Direct physical embodiment
+Bridge,2,Direct physical embodiment
+Road,2,Direct physical embodiment
+Lamp,2,Direct physical embodiment
+Door,2,Direct physical embodiment
+Chair,2,Direct physical embodiment
+Table,2,Direct physical embodiment
+School building,2,Direct physical embodiment
+Campus,2,Direct physical embodiment
+Hospital ward,2,Direct physical embodiment
+Cathedral,2,Direct physical embodiment
+Prison,2,Direct physical embodiment
+Factory floor,2,Direct physical embodiment
+City,2,Direct physical embodiment
+Nation,2,Direct physical embodiment
+Coin,2,Direct physical embodiment
+Money,2,Direct physical embodiment
+Book,2,Direct physical embodiment
+Painting,2,Direct physical embodiment
+Statue,2,Direct physical embodiment
+Computer,2,Direct physical embodiment
+Phone,2,Direct physical embodiment
+Letter,2,Direct physical embodiment
+Ticket,2,Direct physical embodiment
+Passport,2,Direct physical embodiment
+Flag,2,Direct physical embodiment
+Uniform,2,Direct physical embodiment
+Observation tower,2,Direct physical embodiment
+Library,2,Direct physical embodiment
+Museum,2,Direct physical embodiment
+Market,3,Indirect/physically defined
+Warehouse,2,Direct physical embodiment
+Ship,2,Direct physical embodiment
+Airplane,2,Direct physical embodiment
+Train,2,Direct physical embodiment
+Subway,2,Direct physical embodiment
+Bus,2,Direct physical embodiment
+Car,2,Direct physical embodiment
+Motorcycle,2,Direct physical embodiment
+Helmet,2,Direct physical embodiment
+Backpack,2,Direct physical embodiment
+Tent,2,Direct physical embodiment
+Farm,2,Direct physical embodiment
+Barn,2,Direct physical embodiment
+Windmill,2,Direct physical embodiment
+Fountain,2,Direct physical embodiment
+Theater,2,Direct physical embodiment
+Cinema,2,Direct physical embodiment
+Restaurant,2,Direct physical embodiment
+Cargo ship,2,Direct physical embodiment
+Passenger airplane,2,Direct physical embodiment
+Electric train,2,Direct physical embodiment
+Metro station,2,Direct physical embodiment
+City bus,2,Direct physical embodiment
+Sports car,2,Direct physical embodiment
+Racing motorcycle,2,Direct physical embodiment
+Safety helmet,2,Direct physical embodiment
+Camping backpack,2,Direct physical embodiment
+Canvas tent,2,Direct physical embodiment
+Empire,3,Indirect/physically defined
+Rivalry,3,Indirect/physically defined
+Battle,3,Indirect/physically defined
+Commerce,3,Indirect/physically defined
+Coinage,3,Indirect/physically defined
+Government,3,Indirect/physically defined
+Law,3,Indirect/physically defined
+Election,3,Indirect/physically defined
+Dictatorship,3,Indirect/physically defined
+Economy,3,Indirect/physically defined
+Industry,3,Indirect/physically defined
+Farming,3,Indirect/physically defined
+Diplomacy,3,Indirect/physically defined
+Education,3,Indirect/physically defined
+Crime,3,Indirect/physically defined
+Taxation,3,Indirect/physically defined
+Innovation,3,Indirect/physically defined
+Broadcasting,3,Indirect/physically defined
+Migration,3,Indirect/physically defined
+Exploration,3,Indirect/physically defined
+Bureaucracy,3,Indirect/physically defined
+Transport,3,Indirect/physically defined
+Tradition,3,Indirect/physically defined
+Revolution,3,Indirect/physically defined
+Colonial rule,3,Indirect/physically defined
+Monarchy,3,Indirect/physically defined
+Republic,3,Indirect/physically defined
+Infrastructure,3,Indirect/physically defined
+Piracy,3,Indirect/physically defined
+Security,3,Indirect/physically defined
+Abolition,3,Indirect/physically defined
+Feudalism,3,Indirect/physically defined
+Discovery,3,Indirect/physically defined
+Urbanization,3,Indirect/physically defined
+Corporate strategy,3,Indirect/physically defined
+Manufacturing,3,Indirect/physically defined
+Market crash,3,Indirect/physically defined
+Workers' strike,3,Indirect/physically defined
+Public protest,3,Indirect/physically defined
+Corruption scandal,3,Indirect/physically defined
+Engineering patent,3,Indirect/physically defined
+News broadcast,3,Indirect/physically defined
+Human relocation,3,Indirect/physically defined
+Space travel,3,Indirect/physically defined
+Civic administration,3,Indirect/physically defined
+Shipping logistics,3,Indirect/physically defined
+Family tradition,3,Indirect/physically defined
+Civil uprising,3,Indirect/physically defined
+Royal monarchy,3,Indirect/physically defined
+Federal republic,3,Indirect/physically defined
+Justice,4,Abstract (no clear physical link)
+Morality,4,Abstract (no clear physical link)
+Free will,4,Abstract (no clear physical link)
+Truth,4,Abstract (no clear physical link)
+Knowledge,4,Abstract (no clear physical link)
+Wisdom,4,Abstract (no clear physical link)
+Love,4,Abstract (no clear physical link)
+Honor,4,Abstract (no clear physical link)
+Beauty,4,Abstract (no clear physical link)
+Happiness,4,Abstract (no clear physical link)
+Suffering,4,Abstract (no clear physical link)
+Thought,4,Abstract (no clear physical link)
+Idea,4,Abstract (no clear physical link)
+Concept,4,Abstract (no clear physical link)
+Ethics,4,Abstract (no clear physical link)
+Logic,4,Abstract (no clear physical link)
+Mathematics,4,Abstract (no clear physical link)
+Philosophy,4,Abstract (no clear physical link)
+Theory,4,Abstract (no clear physical link)
+Inspiration,4,Abstract (no clear physical link)
+Consciousness,4,Abstract (no clear physical link)
+Intuition,4,Abstract (no clear physical link)
+Creativity,4,Abstract (no clear physical link)
+Intelligence,4,Abstract (no clear physical link)
+Fate,4,Abstract (no clear physical link)
+Faith,4,Abstract (no clear physical link)
+Enlightenment,4,Abstract (no clear physical link)
+Destiny,4,Abstract (no clear physical link)
+Virtue,4,Abstract (no clear physical link)
+Sin,4,Abstract (no clear physical link)
+Guilt,4,Abstract (no clear physical link)
+Hope,4,Abstract (no clear physical link)
+Regret,4,Abstract (no clear physical link)
+Metaphor,4,Abstract (no clear physical link)
+Symbolism,4,Abstract (no clear physical link)
+Imagination,4,Abstract (no clear physical link)
+Ego,4,Abstract (no clear physical link)
+Nostalgia,4,Abstract (no clear physical link)
+Despair,4,Abstract (no clear physical link)
+Spirituality,4,Abstract (no clear physical link)
+Aesthetic,4,Abstract (no clear physical link)
+Charisma,4,Abstract (no clear physical link)
+Idealism,4,Abstract (no clear physical link)
+Ambition,4,Abstract (no clear physical link)
+Introspection,4,Abstract (no clear physical link)
+Philosophical idea,4,Abstract (no clear physical link)
+Logical reasoning,4,Abstract (no clear physical link)
+Moral dilemma,4,Abstract (no clear physical link)
+Symbolic gesture,4,Abstract (no clear physical link)
+Mathematical proof,4,Abstract (no clear physical link)
+Transcendent thought,4,Abstract (no clear physical link)
+Scientific theory,4,Abstract (no clear physical link)
+Artistic inspiration,4,Abstract (no clear physical link)
+Mental awareness,4,Abstract (no clear physical link)
+Intuitive feeling,4,Abstract (no clear physical link)
+Creative impulse,4,Abstract (no clear physical link)
