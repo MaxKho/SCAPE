@@ -204,7 +204,13 @@ src/
 
 ---
 
-## Data & Licensing (UK)
+## Citation
+
+If you use SCAPE-T in academic work, please cite the repository and include a link to the code.
+
+---
+
+# Data & Licensing (UK)
 
 **Jurisdiction.** This repository is maintained from the **United Kingdom**, where literary works are protected for **life + 70 years** (UK law). Public-domain (PD) status for non-CC texts in this repo is assessed under **UK law**.
 
@@ -257,8 +263,9 @@ Texts included here are **public domain in the UK**. Keep **source URLs** and do
 
 Folders/files **not** containing Wikipedia text (e.g., the synthetic subsets) are **not** subject to CC BY-SA; they carry the licence stated here (CC0 1.0).
 
+---
 
-### Indication of changes (pre-processing)
+## Indication of changes (pre-processing)
 
 For all source texts, I applied **non-substantive normalisation**:
 
@@ -269,8 +276,9 @@ For all source texts, I applied **non-substantive normalisation**:
 
 No paraphrasing or semantic rewrites of source sentences were performed.
 
+---
 
-### TASL attribution for Wikipedia content
+## TASL attribution for Wikipedia content
 
 The dataset includes material from the following articles (accessed **20/08/2025**). Each entry provides **T**itle, **A**uthor, **S**ource, **L**icence, plus **Changes** as required by CC BY-SA.
 
@@ -294,7 +302,9 @@ The dataset includes material from the following articles (accessed **20/08/2025
 
 > If you add more Wikipedia pages, append TASL entries here with title, URL, access date, licence link, and change notes.
 
-### Public-domain sources (UK)
+---
+
+## Public-domain sources (UK)
 
 **Children’s stories (Project Gutenberg):**
 
@@ -312,7 +322,9 @@ The dataset includes material from the following articles (accessed **20/08/2025
 * *Le Petit Prince* — [https://gutenberg.net.au/ebooks03/0300771h.html](https://gutenberg.net.au/ebooks03/0300771h.html) — **Public Domain (UK)**; **not PD in the US** — accessed 20/08/2025.
   *Reason for omission:* GitHub is US-based; I therefore **do not host** the text and instead provide a **synthetic** French subset (below).
 
-### Synthetic subsets (details & licence)
+---
+
+## Synthetic subsets (details & licence)
 
 **`scape/datasets/dev_simple.txt` — MCTest-style synthetic (English).**
 
@@ -321,7 +333,7 @@ The dataset includes material from the following articles (accessed **20/08/2025
 * **Licence:** **CC0 1.0** — [https://creativecommons.org/publicdomain/zero/1.0/](https://creativecommons.org/publicdomain/zero/1.0/)
 * **Provenance note:** Under OpenAI’s Terms, outputs are owned by the user to the extent permitted by law.
 
-**`scape/datasets/gau_simple.txt` — French children’s-story synthetic.**
+**`scape/datasets/gau_simple.txt` — French children’s story synthetic.**
 
 * **Why synthetic?** *Le Petit Prince* is PD in the UK but **not** in the US; to avoid US distribution issues on GitHub, the original text is **not** included.
 * **How created:** 200 **original** French sentences generated with ChatGPT on 20/08/2025 in the **style** of a simple children’s story (no quotes; no copying).
@@ -330,27 +342,23 @@ The dataset includes material from the following articles (accessed **20/08/2025
 
 > **Separation of licences:** Synthetic files (CC0) are kept separate from Wikipedia-derived files (CC BY-SA). Do not merge them into single files, or the merged files will need to be **CC BY-SA** due to share-alike.
 
-### Code vs data licences
+---
+
+## Code vs data licences
 
 * **Wikipedia-derived data:** **CC BY-SA 4.0** (see licence links above).
 * **Public-domain subsets:** **Public Domain (UK)** (sources listed).
 * **Synthetic subsets (ChatGPT):** **CC0 1.0**.
-* **Code:** choose and declare a code licence (e.g., MIT/Apache/BSD). The code licence is **independent** of data licences.
+* **Code: MIT License**; see the top‑level LICENSE file for full terms.
 
-## Collection method & platform etiquette
+### Collection method & platform etiquette
 
 Data was fetched from publicly available endpoints at modest rates for research. For bulk use of Wikipedia, Wikimedia recommends the **API or dumps** and a descriptive **User-Agent**; this does not affect the licences above but is good practice.
 
-## How to attribute this dataset (downstream users)
+### How to attribute this dataset (downstream users)
 
 When you use files containing Wikipedia text, include something like:
 
 > “This dataset contains text from Wikipedia, available under the **CC BY-SA 4.0** licence. © Wikipedia contributors. Source article(s): *Artificial intelligence*, *Quantum field theory*, *Philosophy of mind* (accessed 20/08/2025). Changes: sentence segmentation; removal of references/boilerplate; light normalisation. Licence: [https://creativecommons.org/licenses/by-sa/4.0/.”](https://creativecommons.org/licenses/by-sa/4.0/.”)
 
 For synthetic or UK-PD subsets, cite the relevant section above.
-
----
-
-## Citation
-
-If you use SCAPE-T in academic work, please cite the repository and include a link to the code.
