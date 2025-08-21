@@ -214,14 +214,14 @@ If you use SCAPE-T in academic work, please cite the repository and include a li
 
 **Jurisdiction.** This repository is maintained from the **United Kingdom**, where literary works are protected for **life + 70 years** (UK law). Public-domain (PD) status for non-CC texts in this repo is assessed under **UK law**.
 
-**Access dates.** All source texts referenced below were accessed on **20/08/2025**.
+**Access dates.** All source texts referenced below were accessed on **18/08/2025**.
 
 ---
 
 ## What this dataset contains
 
-* **Wikipedia sentences** (bulk reuse; hundreds–thousands) used as the *complex* side in evaluations.
-* **Public-domain children’s stories** (Project Gutenberg, UK-PD) used as the *simple* side.
+* **Wikipedia sentences** (bulk reuse; hundreds–thousands) used as the *complex* group in evaluations.
+* **Public-domain children’s stories** (Project Gutenberg, UK-PD) used as the *simple* group.
 * **Classic philosophy extracts** (Project Gutenberg, UK-PD) used as *complex* development material.
 * **Two synthetic subsets (ChatGPT)** used for compliance in place of content I may not redistribute:
 
@@ -308,18 +308,18 @@ The dataset includes material from the following articles (accessed **20/08/2025
 
 **Children’s stories (Project Gutenberg):**
 
-* *The Three Little Pigs* — [https://www.gutenberg.org/cache/epub/18155/pg18155.txt](https://www.gutenberg.org/cache/epub/18155/pg18155.txt) — **Public Domain (UK)** — accessed 20/08/2025.
-* *The Little Gingerbread Man* — [https://www.gutenberg.org/files/25877/25877.txt](https://www.gutenberg.org/files/25877/25877.txt) — **Public Domain (UK)** — accessed 20/08/2025.
-* *The Children’s Hour (collection)* — [https://www.gutenberg.org/files/11592/11592-h/11592-h.htm](https://www.gutenberg.org/files/11592/11592-h/11592-h.htm) — **Public Domain (UK)** — accessed 20/08/2025.
+* *The Three Little Pigs* — [https://www.gutenberg.org/cache/epub/18155/pg18155.txt](https://www.gutenberg.org/cache/epub/18155/pg18155.txt) — **Public Domain (UK)** — accessed 18/08/2025.
+* *The Little Gingerbread Man* — [https://www.gutenberg.org/files/25877/25877.txt](https://www.gutenberg.org/files/25877/25877.txt) — **Public Domain (UK)** — accessed 18/08/2025.
+* *The Children’s Hour (collection)* — [https://www.gutenberg.org/files/11592/11592-h/11592-h.htm](https://www.gutenberg.org/files/11592/11592-h/11592-h.htm) — **Public Domain (UK)** — accessed 18/08/2025.
 
 **Classic philosophy (Project Gutenberg):**
 
-* G.W\.F. Hegel — Project Gutenberg eBook #55108 — [https://www.gutenberg.org/ebooks/55108.txt.utf-8](https://www.gutenberg.org/ebooks/55108.txt.utf-8) — **Public Domain (UK)** — accessed 20/08/2025.
-* Immanuel Kant — Project Gutenberg eBook #4280 — [https://www.gutenberg.org/ebooks/4280.txt.utf-8](https://www.gutenberg.org/ebooks/4280.txt.utf-8) — **Public Domain (UK)** — accessed 20/08/2025.
+* G.W\.F. Hegel — Project Gutenberg eBook #55108 — [https://www.gutenberg.org/ebooks/55108.txt.utf-8](https://www.gutenberg.org/ebooks/55108.txt.utf-8) — **Public Domain (UK)** — accessed 18/08/2025.
+* Immanuel Kant — Project Gutenberg eBook #4280 — [https://www.gutenberg.org/ebooks/4280.txt.utf-8](https://www.gutenberg.org/ebooks/4280.txt.utf-8) — **Public Domain (UK)** — accessed 18/08/2025.
 
 **Classic literature (PG-AU; not redistributed here):**
 
-* *Le Petit Prince* — [https://gutenberg.net.au/ebooks03/0300771h.html](https://gutenberg.net.au/ebooks03/0300771h.html) — **Public Domain (UK)**; **not PD in the US** — accessed 20/08/2025.
+* *Le Petit Prince* — [https://gutenberg.net.au/ebooks03/0300771h.html](https://gutenberg.net.au/ebooks03/0300771h.html) — **Public Domain (UK)**; **not PD in the US** — accessed 18/08/2025.
   *Reason for omission:* GitHub is US-based; I therefore **do not host** the text and instead provide a **synthetic** French subset (below).
 
 ---
@@ -329,14 +329,14 @@ The dataset includes material from the following articles (accessed **20/08/2025
 **`scape/datasets/dev_simple.txt` — MCTest-style synthetic (English).**
 
 * **Why synthetic?** The MCTest dataset is distributed under a Microsoft Research licence that typically **prohibits redistribution**; therefore the original MCTest sentences are **not** included.
-* **How created:** 200 **original** sentences generated with ChatGPT on 20/08/2025, prompted to resemble the **style** and **reading level** of MCTest (no quotes; no copying).
+* **How created:** 200 **original** sentences generated with ChatGPT on 18/08/2025, prompted to resemble the **style** and **reading level** of MCTest (no quotes; no copying).
 * **Licence:** **CC0 1.0** — [https://creativecommons.org/publicdomain/zero/1.0/](https://creativecommons.org/publicdomain/zero/1.0/)
 * **Provenance note:** Under OpenAI’s Terms, outputs are owned by the user to the extent permitted by law.
 
 **`scape/datasets/gau_simple.txt` — French children’s story synthetic.**
 
 * **Why synthetic?** *Le Petit Prince* is PD in the UK but **not** in the US; to avoid US distribution issues on GitHub, the original text is **not** included.
-* **How created:** 200 **original** French sentences generated with ChatGPT on 20/08/2025 in the **style** of a simple children’s story (no quotes; no copying).
+* **How created:** 200 **original** French sentences generated with ChatGPT on 18/08/2025 in the **style** of a simple children’s story (no quotes; no copying).
 * **Licence:** **CC0 1.0** — [https://creativecommons.org/publicdomain/zero/1.0/](https://creativecommons.org/publicdomain/zero/1.0/)
 * **Provenance note:** As above.
 
@@ -359,6 +359,6 @@ Data was fetched from publicly available endpoints at modest rates for research.
 
 When you use files containing Wikipedia text, include something like:
 
-> “This dataset contains text from Wikipedia, available under the **CC BY-SA 4.0** licence. © Wikipedia contributors. Source article(s): *Artificial intelligence*, *Quantum field theory*, *Philosophy of mind* (accessed 20/08/2025). Changes: sentence segmentation; removal of references/boilerplate; light normalisation. Licence: [https://creativecommons.org/licenses/by-sa/4.0/.”](https://creativecommons.org/licenses/by-sa/4.0/.”)
+> “This dataset contains text from Wikipedia, available under the **CC BY-SA 4.0** licence. © Wikipedia contributors. Source article(s): *Artificial intelligence*, *Quantum field theory*, *Philosophy of mind* (accessed 18/08/2025). Changes: sentence segmentation; removal of references/boilerplate; light normalisation. Licence: [https://creativecommons.org/licenses/by-sa/4.0/.”](https://creativecommons.org/licenses/by-sa/4.0/.”)
 
 For synthetic or UK-PD subsets, cite the relevant section above.
