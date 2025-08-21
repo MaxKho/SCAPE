@@ -163,7 +163,6 @@ print(f"Best ACC: {best['acc']:.4f}\nBest params: {best['params']}")
     > **Note:** If you pass `datasets.Dev_simple`/`GAU_simple` from this repo, remember these are **AI-generated replacements** (different from the SCAPE-T paper). See **“Data & Licensing (UK)”**.
  
 ### Advanced: (Re)build datasets from source
-
 If you need to re-scrape/regenerate the datasets instead of using the bundled ones, use the builder utilities in `scape.dataset_builder`:
 
 ```python
@@ -176,7 +175,7 @@ Test_simple, Test_complex, WLC_Test_simple, WLC_Test_complex = get_test_splits(n
 GAU_simple = get_gau_split()
 data = get_all_datasets()
 ```
-
+> **Note:** If you use the builders to fetch third-party data (e.g., MCTest, PG-AU), you must obtain it from the official source under its licence and must not redistribute it here
 ---
 
 ## Performance tips
